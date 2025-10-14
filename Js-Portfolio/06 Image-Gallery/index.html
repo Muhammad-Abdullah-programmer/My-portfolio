@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 flex items-center justify-center h-screen text-white font-sans">
+
+  <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl w-96">
+    <h1 class="text-2xl font-bold mb-6 text-center text-indigo-400">Password Generator</h1>
+
+    <div class="mb-4">
+      <label for="length" class="block text-sm font-medium mb-2">Password Length</label>
+      <input id="length" type="number" min="4" max="30" value="12" class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+    </div>
+
+    <div class="mb-4 space-y-2">
+      <label class="flex items-center gap-2">
+        <input type="checkbox" id="uppercase" class="accent-indigo-500" checked> Uppercase Letters
+      </label>
+      <label class="flex items-center gap-2">
+        <input type="checkbox" id="lowercase" class="accent-indigo-500" checked> Lowercase Letters
+      </label>
+      <label class="flex items-center gap-2">
+        <input type="checkbox" id="numbers" class="accent-indigo-500" checked> Numbers
+      </label>
+      <label class="flex items-center gap-2">
+        <input type="checkbox" id="symbols" class="accent-indigo-500"> Symbols
+      </label>
+    </div>
+
+    <button id="generateBtn" class="w-full py-2 bg-indigo-500 hover:bg-indigo-600 transition rounded-lg font-semibold">Generate Password</button>
+
+    <div class="mt-4 bg-gray-700 rounded-lg flex items-center justify-between px-4 py-3">
+      <p id="passwordDisplay" class="text-lg font-mono truncate">Your password will appear here</p>
+      <button id="copyBtn" class="text-sm bg-indigo-500 px-3 py-1 rounded hover:bg-indigo-600">Copy</button>
+    </div>
+  </div>
+
+  <script>
+    const lengthInput = document.getElementById("length");
+    const uppercase = document.getElementById("uppercase");
+    const lowercase = document.getElementById("lowercase");
+    const numbers = document.getElementById("numbers");
+    const symbols = document.getElementById("symbols");
+    const generateBtn = document.getElementById("generateBtn");
+    const passwordDisplay = document.getElementById("passwordDisplay");
+    const copyBtn = document.getElementById("copyBtn");
+
+    const upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const lowerChars = "abcdefghijklmnopqrstuvwxyz";
+    const numberChars = "0123456789";
+    const symbolChars = "!@#$%^&*()_+=-{}[];:<>,.?/";
+
+    function generatePassword() {
+      let allChars = "";
+      if (uppercase.checked) allChars += upperChars;
+      if (lowercase.checked) allChars += lowerChars;
+      if (numbers.checked) allChars += numberChars;
+      if (symbols.checked) allChars += symbolChars;
+
+      if (allChars === "") {
+        alert("Please select at least one character type!");
+        return;
+      }
+
+      let password = "";
+      for (let i = 0; i < lengthInput.value; i++) {
+        const randomIndex = Math.floor(Math.random() * allChars.length);
+        password += allChars[randomIndex];
+      }
+
+      passwordDisplay.textContent = password;
+    }
+
+    generateBtn.addEventListener("click", generatePassword);
+
+    copyBtn.addEventListener("click", () => {
+      navigator.clipboard.writeText(passwordDisplay.textContent);
+      alert("Password copied to clipboard!");
+    });
+  </script>
+
+</body>
+</html>
