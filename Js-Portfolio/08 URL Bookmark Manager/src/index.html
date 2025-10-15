@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center py-10">
+
+    <!-- Title  -->
+     <h1 class="text-3xl font-bold mb-8">URL Bookmark Manager</h1>
+
+     <!-- Add Bookmark -->
+      <div class="w-full max-w-md bg-gray-800 rounded-lg p-5 shadow-md mb-6 flex flex-col ">
+
+        <!-- Bookmark Title  -->
+         <h2 class="text-xl mb-3 font-semibold">Add New Bookmark</h2>
+
+         <!-- Form  -->
+          <form action="" id="bookmark-form" class="space-y-3">
+            <!-- Input 1st -->
+             <input type="text" id="name" placeholder="Website Name" class="w-full p-2 rounded bg-gray-700 text-white outline-none" required>
+
+             <!-- input 2nd -->
+             <input type="url" id="url" placeholder="https://example.com" class="w-full p-2 rounded bg-gray-700 text-white outline-none" required>
+
+             <!-- input 3rd -->
+             <input type="text" id="tags" placeholder="Tags (comma Separated)" class="w-full p-2 rounded bg-gray-700 text-white outline-none" required>
+
+             <!-- Button  -->
+              <button class="w-full bg-blue-600 hover:bg-blue-700 transition-colors p-2 rounded ">Add Bookmark</button>
+
+          </form>
+
+          <!-- Search Bar  -->
+           <div class="w-full max-w-md mb-4">
+<input type="text" id="search" placeholder="Search by name or Tag..." class="w-full p-2 rounded bg-gray-700 text-white outline-none">
+           </div>
+
+           <!-- Bookmark list -->
+            <div id="bookmark-list" class="w-full max-w-md space-y-4">
+
+            </div>
+
+      </div>
+
+
+    
+   <script src="script.js"></script>
+
+</body>
+</html>
