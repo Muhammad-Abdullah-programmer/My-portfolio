@@ -3,7 +3,7 @@ const btn = document.getElementById("countBtn");
 const message = document.getElementById("message");
 
 btn.addEventListener("click", () => {
-  const text = input.value.toLowerCase();
+  const text = input.value.toLowerCase(); // convert to lowercase for easy checking
   let count = 0;
 
   for (let char of text) {
@@ -19,6 +19,4 @@ btn.addEventListener("click", () => {
     message.textContent = `There are ${count} vowels in your text.`;
     message.style.color = "lightgreen";
   }
-
-  input.value = ""
 });
