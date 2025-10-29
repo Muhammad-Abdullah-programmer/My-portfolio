@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center h-screen">
+ <div class="card flex flex-col w-45 h-auto bg-gray-100 shadow-lg rounded-lg p-2 border border-2- border-sky-500">
+
+    <!-- Tittle  -->
+     <h1 class="font-bold text-xl mb-4 text-center">Temprature Converter</h1>
+<input type="number" id="tempInput" placeholder="Enter Temprature" class="p-2 mb-4 border rounded w-full">
+
+<select name="" id="unit" class=" w-full border rounded">
+     <option value="C">Celsius ➜ Fahrenheit</option>
+      <option value="F">Fahrenheit ➜ Celsius</option>
+</select>
+
+<!-- Button  -->
+ <button id="convertBtn" class="bg-black text-white font-bold text-xl my-3 ">Convert</button>
+
+     <p id="result" class="mt-2 text-lg font-semibold text-gray-700">Result: --</p>
+
+ </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
