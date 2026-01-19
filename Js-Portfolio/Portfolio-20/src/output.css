@@ -5,12 +5,9 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-300: oklch(87.9% 0.169 91.605);
-    --color-yellow-300: oklch(90.5% 0.182 98.111);
-    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-lg: 1.125rem;
@@ -19,10 +16,8 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
-    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
-    --tracking-tighter: -0.05em;
     --tracking-tight: -0.025em;
     --tracking-wide: 0.025em;
     --tracking-widest: 0.1em;
@@ -202,8 +197,17 @@
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
+  }
+  .ml-5 {
+    margin-left: calc(var(--spacing) * 5);
+  }
+  .ml-9 {
+    margin-left: calc(var(--spacing) * 9);
   }
   .flex {
     display: flex;
@@ -214,26 +218,14 @@
   .h-120 {
     height: calc(var(--spacing) * 120);
   }
-  .h-140 {
-    height: calc(var(--spacing) * 140);
-  }
-  .h-150 {
-    height: calc(var(--spacing) * 150);
-  }
   .h-\[90vh\] {
     height: 90vh;
-  }
-  .h-screen {
-    height: 100vh;
   }
   .min-h-\[80vh\] {
     min-height: 80vh;
   }
-  .min-h-\[90vh\] {
-    min-height: 90vh;
-  }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
+  .min-h-screen {
+    min-height: 100vh;
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -244,47 +236,20 @@
   .w-120 {
     width: calc(var(--spacing) * 120);
   }
-  .w-140 {
-    width: calc(var(--spacing) * 140);
-  }
-  .w-150 {
-    width: calc(var(--spacing) * 150);
-  }
-  .w-153 {
-    width: calc(var(--spacing) * 153);
-  }
   .w-159 {
     width: calc(var(--spacing) * 159);
   }
   .w-170 {
     width: calc(var(--spacing) * 170);
   }
-  .w-screen {
-    width: 100vw;
-  }
-  .max-w-20 {
-    max-width: calc(var(--spacing) * 20);
-  }
-  .max-w-30 {
-    max-width: calc(var(--spacing) * 30);
-  }
-  .max-w-40 {
-    max-width: calc(var(--spacing) * 40);
+  .w-full {
+    width: 100%;
   }
   .max-w-50 {
     max-width: calc(var(--spacing) * 50);
   }
   .max-w-200 {
     max-width: calc(var(--spacing) * 200);
-  }
-  .min-w-20 {
-    min-width: calc(var(--spacing) * 20);
-  }
-  .min-w-30 {
-    min-width: calc(var(--spacing) * 30);
-  }
-  .min-w-50 {
-    min-width: calc(var(--spacing) * 50);
   }
   .border-collapse {
     border-collapse: collapse;
@@ -309,9 +274,6 @@
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
-  }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
@@ -338,10 +300,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
-  }
   .border-\[\#AEEA2B\] {
     border-color: #AEEA2B;
   }
@@ -357,12 +315,6 @@
   .bg-\[\#AEEA2B\] {
     background-color: #AEEA2B;
   }
-  .bg-\[\#\] {
-    background-color: #;
-  }
-  .bg-\[AEEA2B\] {
-    background-color: AEEA2B;
-  }
   .bg-amber-300 {
     background-color: var(--color-amber-300);
   }
@@ -374,9 +326,6 @@
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
-  }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -437,9 +386,6 @@
   .text-\[\#AEEA2B\] {
     color: #AEEA2B;
   }
-  .text-\[\#\] {
-    color: #;
-  }
   .text-white {
     color: var(--color-white);
   }
@@ -449,6 +395,11 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .md\:ml-0 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * 0);
+    }
   }
   .md\:flex-row {
     @media (width >= 48rem) {
@@ -460,6 +411,16 @@
       justify-content: space-around;
     }
   }
+  .md\:justify-center {
+    @media (width >= 48rem) {
+      justify-content: center;
+    }
+  }
+  .lg\:ml-0 {
+    @media (width >= 64rem) {
+      margin-left: calc(var(--spacing) * 0);
+    }
+  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
@@ -468,6 +429,11 @@
   .lg\:justify-around {
     @media (width >= 64rem) {
       justify-content: space-around;
+    }
+  }
+  .lg\:justify-center {
+    @media (width >= 64rem) {
+      justify-content: center;
     }
   }
 }
