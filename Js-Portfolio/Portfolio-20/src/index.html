@@ -309,10 +309,10 @@
      </section>
 
      <!-- Contact Us Section  -->
-      <section>
-        <div class="contact-us flex flex-col">
+      <section class="w-full md:mt-8">
+        <div class="contact-us flex flex-col md:flex-row md:w-[80vw] mx-auto md:gap-x-8">
           <!-- Text  -->
-           <div class="contact-text flex flex-col gap-y-4 flex-1">
+           <div class="contact-text flex flex-col gap-y-4 flex-1 md:flex-1">
             <h4 class="text-[#95ae4e] font-semibold">CONTACT NOW</h4>
             <h3 class="uppercase text-white text-2xl font-bold">Get in Touch wit us</h3>
             <p class="text-gray-200 tracking-wide">Ready to take your digital presence to the next level? Whether you're a startup looking to establish your brand or an establish company aiming to refresh your online identity. I am here to help your company.</p>
@@ -345,29 +345,34 @@
            </div>
 
            <!-- Form  -->
-            <div class="from  bg-[#343434] my-8">
+            <div class="from  bg-[#343434] my-8 md:flex-1 md:px-4 md:py-4 md:rounded ">
              
               <h2 class="text-white font-bold uppercase my-4">Leave A Message</h2>
 
               <form action="" class="grid grid-cols-2 grid-rows-4 gap-x-4 gap-y-4 w-full">
                 <!-- Name  -->
                 <div class="name col-span-1  bg-[#404040]">
-                  <input type="text" placeholder="Full Name" class="text-gray-200 font-bold py-2 px-1 rounded ">
+                  <input type="text" placeholder="Full Name" class="text-gray-200 font-bold py-2 px-1 rounded " id="nameInpt">
                 </div>
                  <!-- Phone Number  -->
                 <div class="name col-span-1 bg-[#404040]">
-                  <input type="number" placeholder="Phone Number" class="text-gray-200 font-bold py-2 px-1 rounded ">
+                  <input type="number" placeholder="Phone Number" class="text-gray-200 font-bold py-2 px-1 rounded " id="numInpt">
                 </div>
 
                 <!-- Email  -->
                   <div class="name col-span-2  bg-[#404040]">
-                  <input type="text" placeholder="Email Address" class="text-gray-200 font-bold py-2 px-1 rounded ">
+                  <input type="text" placeholder="Email Address" class="text-gray-200 font-bold py-2 px-1 rounded " id="mailInpt" required>
                 </div>
 
                 <!-- Message  -->
                   <div class="name col-span-2 row-span-2  bg-[#404040]">
                   <textarea name="message" placeholder="Message" id="" class="text-gray-200 font-bold py-2 px-1 rounded"></textarea>
                 </div>
+
+                <!-- button  -->
+                 <div class="btn my-2">
+                  <button id="submit" class="bg-[#b4e732] px-2 py-1 font-bold rounded ">Submit</button>
+                 </div>
               </form>
             </div>
         </div>
