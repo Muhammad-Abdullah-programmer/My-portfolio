@@ -16,7 +16,7 @@
 <body class="bg-[#161616] min-h-screen w-full overflow-x-hidden font-sans">
 <!-- Navbar Section  -->
   <section class="w-full mx-auto">
-<div class="nav-section w-full mx-auto">
+<div class="nav-section w-full mx-auto flex flex-col items-center">
   <nav class=" flex flex-col items-center ml-9 md:ml-0 lg:ml-0  w-full md:flex-row lg:flex-row md:justify-around lg:justify-around py-4">
 
     <!-- logo  -->
@@ -33,7 +33,7 @@
   </section>
 
 <!-- Hero Section  -->
- <section class="h-[90vh] w-full overflow-hidden ml-5">
+ <section class="h-[90vh] w-full overflow-hidden flex flex-col items-center ">
   <div class="hero-section h-full relative flex  flex-col items-center  md:flex-row md:px-8 lg:flex-row md:justify-center lg:justify-center gap-7 min-h-[80vh] w-full">
     <div class="skills hidden md:flex lg:flex  absolute  md:top-13 md:left-2 top-13 left-2 flex flex-col gap-3 rounded-2xl">
 <img src="/src/html.svg" alt="" class="w-13 bg-[#323232] p-2 rounded-2xl">
@@ -62,9 +62,9 @@
     </div>
 
     <!-- Text  -->
-     <div class="text mt-5">
+     <div class="text mt-5 flex flex-col items-center">
       <h2 class="text-white text-xl md:text-3xl font-extrabold font-sans max-w-xl text-center">A Front-end Web Developer |  and Learning MERN Stack Development</h2>
-      <p class="text-[#757575] font-bold max-w-xl text-left mt-5 tracking-wide text-xs md:text-sm">As a dedicated professional an with a passion for Sift, i bring 1+ years of experience in front-end development through best of my career</p>
+      <p class="text-[#757575] font-bold mt-5 tracking-wider text-sm md:text-lg text-center">As a dedicated professional an with a passion for Sift, i bring 1+ years of experience in front-end development through best of my career</p>
 
       <!-- Buttons  -->
        <div class="btns flex gap-6 mt-5">
@@ -102,8 +102,8 @@
    </div>
 
    <!-- Back end  -->
-    <div class="back-end col-span-1">
-      <p class="flex items-center gap-2 text-md font-bold"><i class="fa-solid fa-check text-[#AEEA2B] font-extrabold text-2xl"></i>Back-end Development</p>
+    <div class="back-end col-span-1 flex justify-center">
+      <p class="flex gap-2 text-md font-bold"><i class="fa-solid fa-check text-[#AEEA2B] font-extrabold text-2xl"></i>Back-end Development</p>
 
     </div>
 
@@ -150,7 +150,7 @@
   </section>
 
   <!-- My Services Section  -->
-   <section class="mt-5 w-full bg-[#343434]">
+   <section class="mt-5 w-full bg-[#222222] md:py-6">
     <div class="services-title text-center">
       <h4 class="text-[#AEEA2B] font-bold">MY SERVICES</h4>
       <h2 class="text-xl text-white font-bold mb-4">MY BEST QUALITY SERVICES</h2>
@@ -159,7 +159,7 @@
 
     <!-- Skils  -->
 
-    <div class="skills grid grid-col-3 grid-rows-2 gap-y-4 md:grid-rows-1 md:grid-cols-3 w-full mx-auto md:gap-4 md:w-[80vw] ">
+    <div class="skills grid grid-col-3 grid-rows-2 gap-2 justify-center gap-y-4 md:grid-rows-1 md:grid-cols-3 w-full mx-auto md:gap-4 md:w-[80vw] ">
 
 
 
@@ -197,7 +197,7 @@
    </section>
 
    <!-- My Skills Section  -->
-    <section class="w-full mt-16">
+    <section class="w-full mt-16 mb-8">
       <div class="my-skills flex flex-col md:w-[80vw] mx-auto">
     <!-- Skill Intro  -->
           <div class="skill-intro flex flex-col gap-y-4">
@@ -309,7 +309,7 @@
      </section>
 
      <!-- Contact Us Section  -->
-      <section class="w-full md:mt-8 bg-[#343434] my-8">
+      <section class="w-full md:mt-8 bg-[#222222] my-8 md:py-8">
         <div class="contact-us flex flex-col md:flex-row md:w-[80vw] mx-auto md:gap-x-8">
           <!-- Text  -->
            <div class="contact-text flex flex-col gap-y-4 flex-1 md:flex-1">
@@ -320,7 +320,7 @@
             <!-- Buttons  -->
              <div class="btn flex gap-x-4 ">
               <!-- Calls  -->
-               <div class="call flex justify-center px-4 gap-x-2 py-6 flex-1 bg-[#343434] rounded ">
+               <div class="call flex  px-4 gap-x-2 py-6 flex-1 bg-[#343434] rounded ">
                 <i class="fa-solid fa-phone text-[#aee534] bg-[#424242] p-2 rounded-[50%] w-10 h-8 text-center"></i>
 
                 <!-- Text  -->
@@ -371,7 +371,7 @@
 
                 <!-- button  -->
                  <div class="btn my-2">
-                  <button id="submit" class="bg-[#b4e732] px-2 py-1 font-bold rounded ">Submit</button>
+                  <button id="submit" class="bg-[#b4e732] px-2 py-1 font-bold rounded md:w-40 md:text-2xl ">Submit</button>
                  </div>
               </form>
             </div>
@@ -383,19 +383,42 @@
         <footer class="flex flex-col items-center">
 <div class="flex flex-col items-center border-b border-[#292929] pb-4">
   <h4 class="text-[#a0b279] font-bold text-center">SUBSCRIBE NEWSLETTER</h4>
-  <h2 class="text-white font-extrabold text-2xl ">STAY UPTO DATED WITH US</h2>
+  <h2 class="text-white font-extrabold text-2xl md:w-130 md:text-4xl ">STAY UPTO DATED WITH US</h2>
   <div class="input text-center flex justify-centerw-full my-4">
-    <input type="email" placeholder="Email Address" class="text-gray-200 font-bold  py-2 px-1 bg-[#292929] rounded relative w-80 ">
-    <button class="bg-[#afeb2c] absolute right-10 rounded px-2 py-2">SUBSCRIBE NOW</button>
+    <input type="email" placeholder="Email Address" class="text-gray-200 font-bold  py-2 px-1 bg-[#292929] rounded relative md:relative w-80 ">
+    <button class="bg-[#afeb2c] absolute md:absolute md:right-150 right-10 rounded px-2 py-2">SUBSCRIBE NOW</button>
   </div>
 
   <!-- Social icons  -->
-   <div class="s-icons flex gap-4">
-<a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-facebook"></i> Facebook</a>
-<a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-instagram"></i> Instagram</a>
-<a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-<a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-youtube"></i> Youtube</a>
-<a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-github"></i> Github</a>
+   <div class="s-icons grid grid-cols-3 grid-rows-2 gap-4">
+    <!-- Facebook  -->
+     <div class="facebook col-span-1">
+      <a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-facebook"></i> Facebook</a>
+    </div>
+
+    <!-- Instagram  -->
+     <div class="instagram col-span-1">
+      <a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-instagram"></i> Instagram</a>
+
+     </div>
+
+     <!-- Linkedin  -->
+      <div class="linkedin col-span-1">
+        <a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+
+      </div>
+
+      <!-- Youtube  -->
+       <div class="youtube col-span-2">
+        <a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-youtube"></i> Youtube</a>
+
+       </div>
+
+       <!-- Github  -->
+        <div class="github col-span-1">
+          <a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-github"></i> Github</a>
+
+        </div>
    </div>
 </div>
 
