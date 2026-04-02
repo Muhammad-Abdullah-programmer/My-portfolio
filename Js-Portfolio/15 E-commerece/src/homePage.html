@@ -6,8 +6,7 @@
   <link href="./output.css" rel="stylesheet">
 
   <!-- Font awesome Cdn  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css" integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
    <!-- Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -112,41 +111,34 @@ Everything you need to upgrade your wardrobe in one place</p>
 
   <!-- Feature Product Heading  -->
    <div class="f-pro-heading">
-    <h2>Feature Products</h2>
+    <h2 class="text-center text-2xl font-semibold my-8 py-4">Feature Products</h2>
    </div>
 
    <!-- Feature Product Cards  -->
-    <div class="f-pro-cards grid grid-cols-6">
-      <div class="card-1 col-span-1 " id="productContainer">
+    <div class="f-pro-cards grid grid-cols-6 justify-content gap-6" id="productContainer">
 
-        <!-- Card Heading  -->
-        <!-- <div class="card-heading">
-          <h3>Card Heading</h3>
-        </div> -->
 
-        <!-- Card Picture  -->
-         <!-- <div class="card-picture">
-          <img src="" alt="">
-         </div> -->
+    
+       
 
-         <!-- Shoping Button  -->
-          <!-- <div class="shoping-btns">
-            <button>Add to Cart</button>
-          </div> -->
-      </div>
+     
 
-      <!-- Next Button  -->
-       <div class="next-btn absolute right-10 top-50">
-        <button id="nextBtn"><a href="#">Next</a> </button>
+      
+    
+</div>
+
+     <!-- Next Button  -->
+       <div class="next-btn absolute right-12 top-70">
+        <button id="nextBtn" class="text-red-600 text-2xl"><a href="#"><i class="fa-solid fa-greater-than"></i></a> </button>
        </div>
 
        <!-- Back Button  -->
-        <div class="back-btn absolute left-10 top-50">
-          <button id="backBtn"><a href="#">Back</a></button>
+        <div class="back-btn absolute left-12 top-70">
+          <button id="backBtn" class="text-red-600 text-2xl"><a href="#"> <i class="fa-solid fa-less-than"></i> </a></button>
         </div>
-    </div>
-</div>
     </section>
+
+  
 
     <script src="/src/Js/feature-p.js"></script>
 </body>
