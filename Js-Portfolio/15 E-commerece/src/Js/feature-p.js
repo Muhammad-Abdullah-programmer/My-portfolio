@@ -4,50 +4,51 @@ let productContainer = document.getElementById("productContainer")
 
 const products = [
 
-    {title: "Watch 1", image: "/src/IMAGES/watches/hero-watch.jpg",
-     price: "$100"
+    {title: "LN LENQIN Watch", image: "/src/IMAGES/watches/Ln Lenqin.jpg",
+     price: "PKR 2789"
 
     },
     
-    {title: "Watch 1", image: "/src/IMAGES/watches/hero-watch.jpg",
-     price: "$100"
+    {title: "BESTKANG Watch", image: "/src/IMAGES/watches/bestking.jpg",
+     price: "PKR 5582"
     },
 
-    {title: "Watch 1", image: "/src/IMAGES/watches/hero-watch.jpg",
-     price: "$100"
+    {title: "Chronograph Watch", image: "/src/IMAGES/watches/Chronograph.jpg",
+     price: "PKR 58089"
     },
 
-    {title: "Watch 1", image: "/src/IMAGES/watches/hero-watch.jpg",
-     price: "$100"
+    {title: "Quartz Analog", image: "/src/IMAGES/watches/Quartz Analog.jpg",
+     price: "PKR 2789"
     },
 
-    {title: "Watch 1", image: "/src/IMAGES/watches/hero-watch.jpg",
-     price: "$100"
+    {title: "Casio Watch", image: "/src/IMAGES/watches/Casio.jpg",
+     price: "PKR 12274"
     },
 
-    {title: "Watch 1", image: "/src/IMAGES/watches/hero-watch.jpg",
-     price: "$100"
+    {title: "CIVO Watch", image: "/src/IMAGES/watches/CIVO.jpg",
+     price: "PKR 3627"
     },
 
 
-     {title: "Watch 1", image: "/src/IMAGES/shirts/hero-shirt-removebg-preview.png",
+     {title: "Short-Selves", image: "/src/IMAGES/shirts/short-sleves.jpg",
      price: "$100"
     },
-      {title: "Watch 1", image: "/src/IMAGES/shirts/hero-shirt-removebg-preview.png",
-     price: "$100"
+      {title: "Crew Neck T-Shirts", image: "/src/IMAGES/shirts/Crew Neck T-Shirts.jpg",
+     price: "PKR 2789"
     },
-      {title: "Watch 1", image: "/src/IMAGES/shirts/hero-shirt-removebg-preview.png",
-     price: "$100"
+      {title: "Dri-Power T-Shirt", image: "/src/IMAGES/shirts/Dri-Power.jpg",
+     price: "PKR 2234"
     },
-      {title: "Watch 1", image: "/src/IMAGES/shirts/hero-shirt-removebg-preview.png",
-     price: "$100"
+      {title: "DryBlend T-Shirt", image: "/src/IMAGES/shirts/DryBlend T-Shirt.jpg",
+     price: "PKR 4772"
     },
-      {title: "Watch 1", image: "/src/IMAGES/shirts/hero-shirt-removebg-preview.png",
-     price: "$100"
+      {title: "Men's X-Temp T-Shirt", image: "/src/IMAGES/shirts/Men's X-Temp.jpg",
+     price: "PKR 4186"
     },
-      {title: "Watch 1", image: "/src/IMAGES/shirts/hero-shirt-removebg-preview.png",
-     price: "$100"
+      {title: "Crewneck T-Shirt", image: "/src/IMAGES/shirts/Crewneck T-Shirt.jpg",
+     price: "PKR 3789"
     },
+
 
 ]
 
@@ -61,17 +62,17 @@ let renderProduct = ()=>{
 
      productContainer.innerHTML = slicedProducts.map((allProducts)=>{
 
-    return `<div class=" hover:shadow-lg   flex flex-col gap-2 p-1 group overflow-hidden relative">
+    return `<div class=" hover:shadow-lg   flex flex-col flex-1  lg:gap-2 lg:p-1 group overflow-hidden relative">
     
    
-    <img src="${allProducts.image}" class=" w-50 h-60 object-cover  group-hover:scale-110 transition duration-100 ease-in-out"/>
+    <img src="${allProducts.image}" class="w-20 h-40 md:w-50 md:h-70 object-cover  md:group-hover:scale-110 md:transition duration-100 ease-in-out"/>
 
 
-    <div class=" mt-5 mb-2"> <h1 class="group-hover:translate-x-8 transition ease-in-out duration-200 hover:bg-[#f4f4f6]">${allProducts.title}</h1></div>
+    <div class=" mt-5 md:mb-2"> <h1 class=" text-xs md:text-lg   md:group-hover:translate-x-8 md:transition ease-in-out duration-200 md:hover:bg-[#f4f4f6]">${allProducts.title}</h1></div>
 
 
 
-    <div class="hover:bg-[#f4f4f6] group-hover:translate-x-8 transition ease-in-out duration-200"> <span class=" font-semibold text-2xl text-[#f85606]">${allProducts.price}</span>  </div>
+    <div class="md:hover:bg-[#f4f4f6] md:group-hover:translate-x-8 md:transition ease-in-out duration-200"> <span class=" font-semibold  text-xs md:text-2xl text-[#f85606]">${allProducts.price}</span>  </div>
     
 
 <div class="cart-div bg-[#f4f4f6] flex flex-col items-center gap-4 absolute top-20 -right-12 group-hover:-translate-x-11  py-2 px-2  opacity- group-hover:opacity-100  transition ease-in-out duration-300">
