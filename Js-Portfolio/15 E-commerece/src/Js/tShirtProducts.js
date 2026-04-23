@@ -1,17 +1,17 @@
 let tShirts = [
 
-    {title: "Next Level Apparel Mens", price : "PKR 200", url: "/src/IMAGES/watches/Home-page-watches/1.png"},
-    {title: "Next Level Apparel Mens", price : "PKR 200", url: "/src/IMAGES/watches/Home-page-watches/2.png"},
-    {title: "Next Level Apparel Mens", price : "PKR 200", url: "/src/IMAGES/watches/Home-page-watches/3.png"},
-    {title: "Next Level Apparel Mens", price : "PKR 200", url: "/src/IMAGES/watches/Home-page-watches/4.png"},
-    {title: "Next Level Apparel Mens", price : "PKR 200", url: "/src/IMAGES/watches/Home-page-watches/5.png"},
-    {title: "Next Level Apparel Mens", price : "PKR 200", url: "/src/IMAGES/watches/Home-page-watches/6.png"},
-    {title: "Next Level Apparel Mens", price : "PKR 200", url: "/src/IMAGES/watches/Home-page-watches/1.png"},
-    {title: "Next Level Apparel Mens", price : "PKR 200", url: "/src/IMAGES/watches/Home-page-watches/2.png"},
-    {title: "Next Level Apparel Mens", price : "PKR 200", url: "/src/IMAGES/watches/Home-page-watches/3.png"},
-    {title: "Next Level Apparel Mens", price : "PKR 200", url: "/src/IMAGES/watches/Home-page-watches/4.png"},
-    {title: "Next Level Apparel Mens", price : "PKR 200", url: "/src/IMAGES/watches/Home-page-watches/5.png"},
-    {title: "Next Level Apparel Mens", price : "PKR 200", url: "/src/IMAGES/watches/Home-page-watches/6.png"},
+    {title: "Next Level Apparel Mens", price : "PKR 900", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", url: "/src/IMAGES/watches/Home-page-watches/1.png"},
+    {title: "Next Level Apparel Mens", price : "PKR 200", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", url: "/src/IMAGES/watches/Home-page-watches/2.png"},
+    {title: "Next Level Apparel Mens", price : "PKR 400", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", url: "/src/IMAGES/watches/Home-page-watches/3.png"},
+    {title: "Next Level Apparel Mens", price : "PKR 900", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", url: "/src/IMAGES/watches/Home-page-watches/4.png"},
+    {title: "Next Level Apparel Mens", price : "PKR 600", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", url: "/src/IMAGES/watches/Home-page-watches/5.png"},
+    {title: "Next Level Apparel Mens", price : "PKR 2200", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", url: "/src/IMAGES/watches/Home-page-watches/6.png"},
+    {title: "Next Level Apparel Mens", price : "PKR 900", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", url: "/src/IMAGES/watches/Home-page-watches/1.png"},
+    {title: "Next Level Apparel Mens", price : "PKR 700", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", url: "/src/IMAGES/watches/Home-page-watches/2.png"},
+    {title: "Next Level Apparel Mens", price : "PKR 300", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", url: "/src/IMAGES/watches/Home-page-watches/3.png"},
+    {title: "Next Level Apparel Mens", price : "PKR 900", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", url: "/src/IMAGES/watches/Home-page-watches/4.png"},
+    {title: "Next Level Apparel Mens", price : "PKR 700", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", url: "/src/IMAGES/watches/Home-page-watches/5.png"},
+    {title: "Next Level Apparel Mens", price : "PKR 500", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", url: "/src/IMAGES/watches/Home-page-watches/6.png"},
    
     
 ]
@@ -21,9 +21,9 @@ let tshirtProducts = document.getElementById("tShirt-all-p")
 
 
 
-tshirtProducts.innerHTML = tShirts.map((allProducts)=>{
+tshirtProducts.innerHTML = tShirts.map((allProducts, index)=>{
 
-   return `<div class="p-tshirt-1 col-span-1  bg-[#f4f4f6] flex flex-col  relative group  min-h-[40vh] max-h-[30vh] rounded-lg overflow-x-hidden"> 
+   return `<div data-index="${index}"  class=" product-card p-tshirt-1 col-span-1  bg-[#f4f4f6] flex flex-col  relative group  min-h-[40vh] max-h-[30vh] rounded-lg overflow-x-hidden"> 
     
   <div class=" aspect-square flex justify-center items-center  h-20vh">
     <img src="${allProducts.url}" class="h-30 object-contain group-hover:scale-140 transition ease-in-out duration-200 ">
@@ -73,3 +73,57 @@ productStars.forEach(el => {
     el.classList.toggle("text-yellow-500");
   });
 });
+
+
+let cards = document.querySelectorAll(".product-card")
+
+cards.forEach(card =>{
+
+  card.addEventListener("click", ()=>{
+
+    let productDetails = document.getElementById("product-detail")
+    productDetails.classList.remove("hidden")
+    let index = card.getAttribute("data-index")
+    let selectedProduct = tShirts[index]
+
+    showProductDetails(selectedProduct)
+  })
+})
+
+
+let showProductDetails = (product)=>{
+
+let detailSection = document.getElementById("product-detail")
+
+detailSection.innerHTML = `
+<div class="w-[80%] h-full mx-auto flex gap-10 justify-center items-center relative bg-[#f4f4f6]">
+
+<img src="${product.url}" class="w-[300px] ">
+
+<div>
+<h1 class="text-2xl font-bold">${product.title}</h1>
+<p class="text-orange-500" >${product.price}</p>
+
+<button class="bg-black text-white px-4 py-2 mt-4" >Add to Cart</button>
+
+<h5 class="my-5">About Product</h5>
+
+<p>${product.details}</p>
+</div>
+
+<div>  <a class="pointer  px-2 py-2 absolute top-5 right-10 text-[#f85606]" id="cross"><i class="fa-solid fa-xmark  text-3xl"></i></a>  </div>
+
+</div>
+
+`
+
+let cross = document.getElementById("cross")
+
+cross.addEventListener("click", ()=>{
+  detailSection.classList.add("hidden")
+  
+
+})
+
+}
+
