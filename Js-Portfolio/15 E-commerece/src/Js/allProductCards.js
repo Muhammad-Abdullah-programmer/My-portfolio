@@ -25,20 +25,23 @@ let allProducts = [
 
 searchBar.addEventListener("input", ()=>{
 
-  let clearnUserInput = searchBar.value.toLowerCase()
+  let userInput = searchBar.value.toLowerCase()
 
- let filteredProducts = allProducts.filter((products)=>{
-
-  return products.title.toLowerCase().includes(clearnUserInput)
-
-  if(clearnUserInput === ""){
+  if(userInput === ""){
     renderProducts(allProducts)
     return
   }
- })
- 
- renderProducts(filteredProducts)
-  
+
+  let filteredProduct = allProducts.filter((product)=>{
+    return product.title.toLowerCase().includes(userInput)
+  })
+
+  if(filteredProduct.length === 0){
+    allProductCards.innerHTML = `<p>Product Not Found</p>`
+   return 
+  }
+
+  renderProducts(filteredProduct)
 })
 
 
@@ -46,23 +49,7 @@ function renderProducts(productsArray){
 
   allProductCards.innerHTML = productsArray.map((product , index)=>{
 
-    return `
-    
-    <div class="product-card">
-    <h2> ${product.title}</h2>
-    <p>${product.price}</p>
-    
-    </div>
-    `
-  }).join("")
-}
-
-
-renderProducts(allProducts)
-
-allProductCards.innerHTML = allProducts.map((product, index)=>{
-
-   return `<div data-index="${index}"  class=" mt-4 col-span-1 row-span-1  bg-[#f4f4f6] flex flex-col  relative group   rounded-lg "> 
+    return `<div data-index="${index}"  class=" mt-4 col-span-1 row-span-1  bg-[#f4f4f6] flex flex-col  relative group   rounded-lg "> 
     
  <div class=" aspect-square flex justify-center items-center  h-20vh">
     <img src="${product.url}" class="h-50 object-contain group-hover:scale-90 transition ease-in-out duration-200 ">
@@ -102,4 +89,10 @@ allProductCards.innerHTML = allProducts.map((product, index)=>{
 
     
     </div>`
-}).join("")
+  }).join("")
+}
+
+
+renderProducts(allProducts)
+
+renderProducts(allProducts)
