@@ -48,7 +48,7 @@
 
 <!-- Search Bar  -->
 <div class="search-bar w-[50%]  px-2">
-  <input type="text" placeholder="Search item" class="bg-white w-full py-2 px-2 outline-none relative">
+  <input type="text" placeholder="Search item" class="bg-white w-full py-2 px-2 outline-none relative" id="searchBar">
   <img src="/src/IMAGES/icons/search.png" alt="Search Button" class="absolute top-6 right-80 w-10 h-10">
 </div>
 
@@ -242,17 +242,21 @@ Everything you need to upgrade your wardrobe in one place</p>
 
            <div id="product-detail" class="mt-10 relative  w-full h-full hidden">
 
-            
+            <div class="bg-white w-[80%] md:w-[100%] rounded-lg p-5 relative">
+
+              <!-- Close Button  -->
+               <button id="closeBtn" class="absolute top-10 right-10 text-3xl text-red-500 font-bold ">&times;</button>
+
+               <!-- Content  -->
+                <div id="detail-content"></div>
+            </div>
              
             
            </div>
           <!-- T-Shirts Products  -->
-           <div class=" h-[80vh] overflow-hidden product-t-shirts grid grid-cols-6 grid-rows-1 place-items-center auto-cols-fr gap-3 gap-y-4  px-2" id="tShirt-all-p">
+           <div class=" product-card h-[80vh] overflow-hidden product-t-shirts grid grid-cols-6 grid-rows-1 place-items-center auto-cols-fr gap-3 gap-y-4  px-2" id="tShirt-all-p">
 
-            <!-- T-shirt col-1  -->
-            
-
-             <!-- 2 -->
+           
           
              
             
