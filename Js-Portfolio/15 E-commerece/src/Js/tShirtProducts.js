@@ -1,5 +1,10 @@
 let searchBar = document.getElementById("searchBar")
 let productDetails = document.getElementById("product-detail")
+let hAddToCartBtn = document.getElementById("hAddToCart")
+
+let productTitle = document.getElementById("productTitle")
+let badge = document.getElementById("badge")
+let cart = []
 
 let tShirts = [
 
@@ -19,6 +24,29 @@ let tShirts = [
    
     
 ]
+
+
+let cartCrossBtn = document.getElementById("cartCrossBtn")
+let cartDiv = document.getElementById("cartDiv")
+let cartItemsList = document.getElementById("cartItemsList")
+
+// cart icon click — open panel
+hAddToCartBtn.addEventListener("click", (e) => {
+  e.preventDefault()
+  cartDiv.classList.toggle("hidden")
+})
+
+// close button
+cartCrossBtn.addEventListener("click", () => {
+  cartDiv.classList.add("hidden")
+})
+
+let closeBtn = document.getElementById("closeBtn")
+closeBtn.addEventListener("click", () => {
+  productDetails.classList.add("hidden")
+  productDetails.classList.remove("flex")
+})
+
 
 
 searchBar.addEventListener("input", ()=>{
@@ -48,43 +76,27 @@ let tshirtProducts = document.getElementById("tShirt-all-p")
 
 function renderProducts(productsArray){
   tshirtProducts.innerHTML = productsArray.map((product, index)=>{
-    return  `<div data-index="${index}"  class=" product-card p-tshirt-1 col-span-1  bg-[#f4f4f6] flex flex-col  relative group  min-h-[40vh] max-h-[30vh] rounded-lg overflow-x-hidden"> 
+    return  `<div data-index="${index}"  class=" product-card p-tshirt-1 col-span-1 row-span-1 bg-[#f4f4f6] flex flex-col  relative group  max-h-[70%] justify-between  rounded-lg overflow-hidden"> 
     
-  <div class=" aspect-square flex justify-center items-center  h-20vh">
-    <img src="${product.url}" class="h-30 object-contain group-hover:scale-140 transition ease-in-out duration-200 ">
+  <div class=" aspect-square flex justify-center items-center  h-[20vh]">
+    <img src="${product.url}" class="h-25 object-contain group-hover:scale-140 transition ease-in-out duration-200 ">
     </div>
 
    
   
-    <div class="flex flex-col px-1  flex-1 bg-[#f4f4f6] shadow-xl mt-12  justify-end">
-      <h2 class="text-md font-normal"> ${product.title}</h2>
+    <div class="flex flex-col py-2 gap-2 px-2 max-h-[30%]  flex-1 border-2 border-white shadow-xl overflow-hidden">
+      <h2 class="text-md font-normal name" > <button class="productTitle">${product.title}</button> </h2>
       
-    <span class="text-[#f85606] text-sm font-bold"> ${product.price} 
-    <i class="fa-regular fa-star ml-10 p-star"></i>
-    <i class="fa-regular fa-star p-star"></i>
-    <i class="fa-regular fa-star p-star"></i>
-    <i class="fa-regular fa-star p-star"></i>
-    </span>
+    <div class=" flex justify-between "> 
+    <p class="text-[#f85606] text-sm font-bold price">${product.price}</p> 
+
+    <button class="bg-slate-900 text-white px-2 py-1 mb-6 rounded addtoCartBtn"> Add to Cart</button>
+    </div>
     
     
     </div>
 
-    <div  class=" flex justify-center items-center gap-2 bottom-11 left-0 px-2   transform translate-y-5 opacity-0 group-hover:opacity-100 group-hover:-translate-y-0 transition ease-in-out duration-300 bg-white h-[15%] w-[100%] absolute">
-  
-      <a href="">  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 text-red-600" id="addToCartBtn">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-</svg>  </a>
-
-<div class="w-[100%] flex justify-evenly">
-<p>Xl</p>
-<p>L</p>
-<p>MD</p>
-<p>SM</p>
-</div>
-
-
-    </div>
-
+    
     
     </div>`
 
@@ -92,21 +104,16 @@ function renderProducts(productsArray){
 }
 
 renderProducts(tShirts)
-renderProducts(tShirts)
 
-let productStars = document.querySelectorAll(".p-star");
 
-productStars.forEach(el => {
-  el.addEventListener("click", () => {
-    el.classList.toggle("text-yellow-500");
-  });
-});
 
 
 
 
 
 tshirtProducts.addEventListener("click", (e)=>{
+
+  if(!e.target.matches(".productTitle")) return
 
   let card = e.target.closest(".product-card");
 
@@ -145,18 +152,105 @@ function showProductDetails(product){
 }
 
 
-let closeBtn = document.getElementById("closeBtn")
 
 
-closeBtn.addEventListener("click", ()=>{
 
-  productDetails.classList.add("hidden")
+
+
+
+
+
+
+tshirtProducts.addEventListener("click", (e) => {
+
+  if (!e.target.matches(".addtoCartBtn")) return
+
+  let card = e.target.closest(".product-card")
+  let name = card.querySelector(".name").textContent
+  let price = card.querySelector(".price").textContent
+
+  let existing = cart.find(item => item.name === name)
+
+  if(existing){
+    existing.qty++
+  }else{
+    cart.push({name, price, qty: 1})
+     e.target.textContent = "Added ✓"
+    e.target.disabled = true
+  }
+  updateCart()
+
 })
 
 
+function updateCart() {
+let totalItems = cart.reduce((sum , item)=> sum + item.qty, 0)
+
+badge.textContent = totalItems
+badge.style.display = totalItems > 0 ? "flex" : "none"
+
+if(cart.length === 0){
+  cartItemsList.innerHTML = `<p class="text-gray-500 text-sm">No Item Added</p>`
+  return
+}
+
+// grand total 
+
+let grandTotal = cart.reduce((sum, item)=>{
+
+  let numPrice = parseInt(item.price.replace(/[^0-9]/g, ""))
+  return sum + (numPrice * item.qty)
+}, 0)
+
+// render items with qty controlls 
+
+cartItemsList.innerHTML = cart.map((item, index)=> `
+
+<div class="flex justify-between items-center py-2 border-b border-gray-100">
+
+<span class="text-sm w-[45%]"> ${item.name}  </span>
+
+<div class="flex items-center gap-1">
+
+<button onClick="changeQty(${index}, -1)" class="bg-gray-200 text-black w-6 h-6 rounded text-sm font-bold"> - </button>
+<span class="text-sm font-semibold w-5 text-center"> ${item.qty}    </span>
+<button onClick="changeQty(${index}, +1)" class="bg-gray-200 text-black w-6 h-6 rounded text-sm font-bold"> + </button>
+</div>
+
+<span class="text-sm text-orange-500 font-bold"> PKR${(parseInt(item.price.replace(/[^0-9]/g, "")) * item.qty).toLocaleString()} </span>
+
+</div>
+
+`).join("") + `<div class="flex justify-between items-center pt-3 mt-2 border-t-2 border-gray-300"> 
+<span class="font-bold text-sm">Grand Total</span>
+      <span class="font-bold text-sm text-orange-500">PKR ${grandTotal.toLocaleString()}</span>
+
+ 
+
+
+              </div>`
+}
 
 
 
+// Change Quantity Function 
 
+function changeQty(index, Change){
 
+  cart[index].qty += Change
 
+  if(cart[index].qty <= 0){
+    cart.splice(index, 1)
+
+    let btns = document.querySelectorAll(".addtoCartBtn")
+    btns.forEach(btn =>{
+
+      if(btn.textContent === "Added ✓"){
+
+      }
+    })
+  }
+
+  updateCart()
+
+}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,43 +20,38 @@
 
 
  <!-- Header Section  -->
-  <section class="w-full h-[22%] bg-[#f85606] hidden md:block lg:block py-5">
+  <section class="w-full h-[15%] bg-[#f85606] hidden md:block lg:block py-5">
 
     <!-- Nav bar -->
     <div class="navbar">
-      <nav class="lg:flex justify-between items-center h-[100%] w-[80%] mx-auto">
+      <nav class="lg:flex justify-between items-center w-[80%] mx-auto">
 
         <!-- Nav Links.............  -->
 <div class="nav-links flex justify-start gap-5 w-[40%] text-white font-semibold text-sm font-inter">
  <ul class="flex gap-5">
-  <li><a href="#">Home</a></li>
-  <li class="group relative"><a href="#">Shop</a>
-  <ul class="absolute 
-             opacity-0 scale-95 
-             group-hover:opacity-100 group-hover:scale-100 
-             transition-all duration-500 ease-out
-               p-2 text-lg font-semibold flex flex-col">
-    <li><a href="#">Watches</a></li>
-    <li><a href="#">Shoes</a></li>
-    <li><a href="#">T-Shirt</a></li>
-  </ul>
+  <li><a href="/src/homePage.html">Home</a></li>
+  <li class="group relative"><a href="#shop">Shop</a>
+ 
   </li>
-  <li><a href="#">About Us</a></li>
-  <li><a href="#">Contact Us</a></li>
+  <li><a href="/src/aboutUs.html">About Us</a></li>
+  <li><a href="/src/contactUs.html">Contact Us</a></li>
  </ul>
 </div>
 
 <!-- Search Bar  -->
 <div class="search-bar w-[50%]  px-2">
   <input type="text" placeholder="Search item" class="bg-white w-full py-2 px-2 outline-none relative" id="searchBar">
-  <img src="/src/IMAGES/icons/search.png" alt="Search Button" class="absolute top-6 right-80 w-10 h-10">
+  <img src="/src/IMAGES/icons/search.png" alt="Search Button" class="absolute top-6 right-70 w-10 h-10">
 </div>
 
 <!-- Cart  -->
- <div class="cart-icon w-[10%] flex justify-end">
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-white">
+ <div class="cart-icon w-[10%] flex justify-end relative">
+<a href="#" id="hAddToCart"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white">
   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
 </svg>
+    <span id="badge" style="display:none; position:absolute; top:-6px; right:-6px; background:#f85606; color:white; font-size:11px; font-weight:600; border-radius:999px; min-width:18px; height:18px; align-items:center; justify-content:center; padding:0 4px;">0</span>
+
+</a>
  </div>
       </nav>
     </div>
@@ -64,7 +59,19 @@
 
   <!-- Hero Section...................................  -->
    <section class="w-full min-h-screen">
-    <div class="hero w-[90%]  bg-[#f4f4f6] mx-auto flex justify-center gap-2">
+
+    <div class="hero w-[90%]   bg-[#f4f4f6] mx-auto flex justify-center gap-2">
+
+      <!-- Cart Panel -->
+<div id="cartDiv" class="hidden fixed z-[9999] top-20 right-4 w-[280px] bg-white shadow-xl border border-gray-200 rounded-lg p-4">
+  <div class="flex justify-between items-center mb-3">
+    <h3 class="font-semibold text-lg">Your Cart</h3>
+    <button id="cartCrossBtn" class="text-red-500 text-xl font-bold">&times;</button>
+  </div>
+  <div id="cartItemsList">
+    <p class="text-gray-500 text-sm">No items added yet.</p>
+  </div>
+</div>
 
       <!-- Text div  -->
        <div class="hero-text w-[50%] flex flex-col pl-4 justify-center ">
@@ -83,7 +90,7 @@ Everything you need to upgrade your wardrobe in one place</p>
 
           <!-- Shop Now Button  -->
            <div class="shop-btn my-4">
-            <button class="bg-[#f85606] px-2 py-2 rounded transition ease-in-out duration-300 hover:bg-[#FF930F] text-white font-semibold">Shop Now</button>
+            <button class="bg-[#f85606] px-2 py-2 rounded transition ease-in-out duration-300 hover:bg-[#FF930F] text-white font-semibold"><a href="#shop">Shop Now</a></button>
            </div>
        </div>
 
@@ -91,13 +98,13 @@ Everything you need to upgrade your wardrobe in one place</p>
         <div class="hero-pictures grid grid-cols-2 grid-rows-2 gap-2 px-2 py-2 w-[50%]">
 
           <!-- Hero Shoes Picture  -->
-<div class="first-picture col-span-1 row-span-1 border-4 border-white h-75 transition delay-75 duration-300 ease-in-out hover:translate-y-1 hover:scale-100">
-  <img src="/src/IMAGES/shoes/hero-removebg-preview.png" alt="Hero Shoes picture" class="object-cover w-full  h-full">
+<div class="first-picture col-span-1 row-span-1 border-4 border-white h-75 ">
+  <img src="/src/IMAGES/shoes/hero-removebg-preview.png" alt="Hero Shoes picture" class="object-cover w-full  h-full transition delay-75 duration-300 ease-in-out hover:scale-90">
 </div>
 
 <!-- Hero Watch  -->
- <div class="first-picture col-span-1 row-span-1 border-4  border-white h-75 flex justify-center items-center transition delay-75 duration-300 hover:translate-y-1 hover:scale-105">
-  <img src="/src/IMAGES/watches/hero-watch-removebg-preview.png" alt="Hero Shoes picture" class=" w-50 h-70">
+ <div class="first-picture col-span-1 row-span-1 border-4  border-white h-75 flex justify-center items-center">
+  <img src="/src/IMAGES/watches/hero-watch-removebg-preview.png" alt="Hero Shoes picture" class=" w-50 h-70 transition delay-75 duration-300 ease-in-out hover:scale-90">
    
 </div>
 
@@ -112,13 +119,21 @@ Everything you need to upgrade your wardrobe in one place</p>
    </section>
 
    <!-- Feature Product Section  -->
-    <section class="feature-product-section py-4 w-full relative">
+    <section class="feature-product-section py-4 w-full relative" id="fProducts">
 <div class="f-product  w-[90%] mx-auto">
 
   <!-- Feature Product Heading  -->
    <div class="f-pro-heading">
     <h2 class="text-center text-2xl font-semibold my-8 py-4">Feature Products</h2>
    </div>
+
+   <!-- Product Detail -->
+<div id="product-detail" class="mt-10 relative w-full h-full hidden">
+  <div class="bg-white w-full rounded-lg p-5 relative">
+    <button id="closeBtn" class="absolute top-10 right-10 text-3xl text-red-500 font-bold">&times;</button>
+    <div id="detail-content"></div>
+  </div>
+</div>
 
    <!-- Feature Product Cards  -->
     <div class="f-pro-cards grid grid-cols-3 grid-rows-2 md:grid-cols-6 md:grid-rows-1 justify-content gap-6" id="productContainer">
@@ -236,47 +251,32 @@ Everything you need to upgrade your wardrobe in one place</p>
      </section>
 
      <!-- Product Section  -->
-      <section class="py-4 my-8 h-[90vh] overflow-hidden">
+      <section class="py-4 my-8 h-[90vh] overflow-hidden" id="shop">
         <div class="product-section w-[90%] h-[80vh] mx-auto">
 
 
-           <div id="product-detail" class="mt-10 relative  w-full h-full hidden">
-
-            <div class="bg-white w-[80%] md:w-[100%] rounded-lg p-5 relative">
-
-              <!-- Close Button  -->
-               <button id="closeBtn" class="absolute top-10 right-10 text-3xl text-red-500 font-bold ">&times;</button>
-
-               <!-- Content  -->
-                <div id="detail-content"></div>
-            </div>
-             
-            
-           </div>
-          <!-- T-Shirts Products  -->
-           <div class=" product-card h-[80vh] overflow-hidden product-t-shirts grid grid-cols-6 grid-rows-1 place-items-center auto-cols-fr gap-3 gap-y-4  px-2" id="tShirt-all-p">
+         
+          <!-- T-Shirts All Products  Here-->
+           <div class="  product-card h-[100vh] overflow-hidden  grid grid-cols-6 grid-rows-2 gap-2 auto-cols-fr   px-2" id="tShirt-all-p">
 
            
           
              
             
            </div>
-              <div class="button text-right mt-5">
-               <a href="/src/allProduct.html" class="bg-black text-white p-2  mr-6">View All Products</a>
-              
-             </div>
+            
         </div>
-       
+        
 
       </section>
 
       <!-- Footer  -->
        <section class="mt-5 bg-[#f4f4f6] w-full h-[30vh]">
-        <footer class="w-full h-full grid grid-cols-4 grid-rows-1 place-content-center items-center">
+        <footer class=" h-full grid grid-cols-4 grid-rows-1 place-content-center items-center w-[90%] mx-auto">
 
           <!-- Col 1 -->
           <div class="col-span-1 pl-2">
-            <h2 class="text-2xl my-2">We are the best E-Commerece Brand in Pakistan</h2>
+            <h2 class="text-3xl my-2">We are the best E-Commerece Brand in Pakistan</h2>
             <p class="text-sm">Selling Modern Items in Affordable Prices</p>
           </div>
 
