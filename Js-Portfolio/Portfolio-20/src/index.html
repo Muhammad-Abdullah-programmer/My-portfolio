@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,150 +8,178 @@
   <title>Portfolio 2026</title>
 
   <!-- Font Awesome  -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: `class`
+  }
+</script>
 
 </head>
-<body class="bg-[#161616] min-h-screen w-full overflow-x-hidden font-sans">
-<!-- Navbar Section  -->
+
+<body class="bg-[#161616] min-h-screen w-full overflow-x-hidden font-sans dark:bg-gray-900 dark:text-white ">
+ 
+  <!-- Navbar Section  -->
   <section class="w-full mx-auto">
-<div class="nav-section w-full mx-auto flex flex-col items-center">
-  <nav class=" flex flex-col items-center ml-9 md:ml-0 lg:ml-0  w-full md:flex-row lg:flex-row md:justify-around lg:justify-around py-4">
+    <div class="nav-section w-full mx-auto flex flex-col items-center">
+      <nav
+        class=" flex flex-col items-center ml-9 md:ml-0 lg:ml-0  w-full md:flex-row lg:flex-row md:justify-around lg:justify-around py-4">
 
-    <!-- logo  -->
-    <div class="logo"><h1 class="text-[#AEEA2B] text-4xl font-extrabold tracking-tight">M Abdullah</h1></div>
+        <!-- logo  -->
+        <div class="logo">
+          <h1 class="text-[#AEEA2B] text-4xl font-extrabold tracking-tight">M Abdullah</h1>
+        </div>
 
-    <!-- Nav links  -->
-     <div class="nav-links text-[#AEEA2B] font-bold flex gap-5">
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact Us</a>
-     </div>
-  </nav>
-</div>
+        <!-- Nav links  -->
+        <div class="nav-links text-[#AEEA2B] font-bold flex gap-5">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <button id="themeToggle" class="p-4 w-10 font-normal  text-black md:font-extrabold bg-white rounded md:w-12 md:h-8 md:py-2 flex md:items-center md:gap-4" ><img src="./night-mode.png" alt="" class="w-10"></button>
+
+        </div>
+      </nav>
+    </div>
   </section>
 
-<!-- Hero Section  -->
- <section class="h-[90vh] w-full overflow-hidden flex flex-col items-center ">
-  <div class="hero-section h-full relative flex  flex-col items-center  md:flex-row md:px-8 lg:flex-row md:justify-center lg:justify-center gap-7 min-h-[80vh] w-full">
-    <div class="skills hidden md:flex lg:flex  absolute  md:top-13 md:left-2 top-13 left-2 flex flex-col gap-3 rounded-2xl">
-<img src="/src/html.svg" alt="" class="w-13 bg-[#323232] p-2 rounded-2xl">
-<img src="/src/css.svg" alt="" class="w-13 bg-[#323232] p-2 rounded-2xl">
-<img src="/src/bootstrap.svg" alt="" class="w-13 bg-[#323232] p-2 rounded-2xl">
-<img src="/src/tailwind-css.svg" alt="" class="w-13 bg-[#323232] p-2 rounded-2xl">
-<img src="/src/javascript.svg" alt="" class="w-13 bg-[#323232] p-2 rounded-2xl">
-    </div>
+  <!-- Hero Section  -->
+  <section class="h-[90vh] w-full overflow-hidden flex flex-col items-center ">
+    <div
+      class="hero-section h-full relative flex  flex-col items-center md:w-full md:overflow-x-hide  md:flex-row md:px-8 lg:flex-row md:justify-center lg:justify-center gap-7 min-h-[80vh] w-full">
+      <div
+        class="skills hidden md:flex lg:flex  absolute  md:top-13 md:left-2 top-13 left-2 flex flex-col gap-3 rounded-2xl">
+        <img src="/src/html.svg" alt="" class="w-13 bg-[#323232] p-2 rounded-2xl">
+        <img src="/src/css.svg" alt="" class="w-13 bg-[#323232] p-2 rounded-2xl">
+        <img src="/src/bootstrap.svg" alt="" class="w-13 bg-[#323232] p-2 rounded-2xl">
+        <img src="/src/tailwind-css.svg" alt="" class="w-13 bg-[#323232] p-2 rounded-2xl">
+        <img src="/src/javascript.svg" alt="" class="w-13 bg-[#323232] p-2 rounded-2xl">
+      </div>
 
-    <div class="skill-title absolute -rotate-90 -left-8 top-50 hidden md:block lg:block">
-      <h2 class="text-white text-4xl tracking-wide font-bold">Best Skills on!</h2>
-    </div>
+      <div class="skill-title absolute rotate-270 -left-8 top-50 hidden md:block lg:block">
+        <h2 class="text-white text-4xl tracking-wide font-bold">Best Skills on!</h2>
+      </div>
 
       <!-- Image Div  -->
 
-  <div class="image-div">
-    <img src="/src/abdullah.png" alt="" class="object-cover h-60 w-60 border border-white rounded-[50%] md:h-120 md:w-120">
-  </div>
-
-
-  <!-- Content Div  -->
-   <div class="content-div ">
-    <div class="name flex ">
-      <img src="./hand.svg" alt="" class="w-10 mx-2">
-      <p class="text-white text-3xl md:text-4xl font-bold tracking-widest">Hi Im M Abdullah</p>
-    </div>
-
-    <!-- Text  -->
-     <div class="text mt-5 flex flex-col items-center">
-      <h2 class="text-white text-xl md:text-3xl font-extrabold font-sans max-w-xl text-center">A Front-end Web Developer |  and Learning MERN Stack Development</h2>
-      <p class="text-[#757575] font-bold mt-5 tracking-wider text-sm md:text-lg text-center">As a dedicated professional an with a passion for Sift, i bring 1+ years of experience in front-end development through best of my career</p>
-
-      <!-- Buttons  -->
-       <div class="btns flex gap-6 mt-5">
-        <a href="" class="py-2 px-3 bg-[#AEEA2B] flex items-center justify-center gap-3 font-bold max-w-50 rounded-lg"><img src="./download.png" alt="" class="w-10">Download CV</a>
-        
-        <!-- Portfolio  -->
-         <a href="" class="bg-transparent border border-[#AEEA2B] text-[#AEEA2B] flex justify-center items-center px-5 rounded-lg font-bold">See Portfolio</a>
-       </div>
-     </div>
-   </div>
-  </div>
-
-
- </section>
-
-
- <!-- About Me Section  -->
-  <section class="w-full h-[70vh]">
-<h3 class=" ml-43 md:text-4xl text-[#AEEA2B] font-extrabold">About Me</h3>
-
-<!-- About Div  -->
- <div class="about-div flex flex-col md:flex-row md:justify-center">
-
-  <!-- Text Div  -->
-   <div class="text-div flex flex-col gap-5 items-center py-4 md:items-start  md:max-w-3xl">
-<h3 class="text-white font-extrabold font-sans text-center md:text-4xl md:text-left md:max-w-4xl">Best Front-end Developer & Learning MERN Stack Development</h3>
-<p class="text-gray-200 font-semibold max-w-4xl tracking-wide text-center md:text-left md:text-lg md:w-2xl ">At Sift, we understand that success is just about delivering a product it's about building relationship and making meaningful impact of clint. </p>
-
-<!-- Skills  -->
- <div class="about-skills text-white grid grid-cols-2 grid-rows-2 gap-2 md:gap-6 w-full">
-  <!-- Front End  -->
-   <div class="front-end col-span-1">
-    <p class="flex items-center gap-2 text-md font-bold"><i class="fa-solid fa-check text-[#AEEA2B] font-extrabold text-2xl"></i>Front-end Development</p>
-
-   </div>
-
-   <!-- Back end  -->
-    <div class="back-end col-span-1 flex justify-center">
-      <p class="flex gap-2 text-md font-bold"><i class="fa-solid fa-check text-[#AEEA2B] font-extrabold text-2xl"></i>Back-end Development</p>
-
-    </div>
-
-    <!-- MERN Stack  -->
-     <div class="mernstack col-span-1">
-      <p class="flex items-center gap-2 text-md font-bold"><i class="fa-solid fa-check text-[#AEEA2B] font-extrabold text-2xl"></i>MERN-Stack Development</p>
-
-     </div>
-
-     <!-- UI UX  -->
-      <div class="ui-ux col-span-1">
-<p class="flex items-center gap-2 text-md font-bold"><i class="fa-solid fa-check text-[#AEEA2B] font-extrabold text-2xl"></i>UI-UX Design</p>
-
+      <div class="image-div flex-1 max-w-xl  md:w-full md:h-full md:flex md:items-center md:justify-center">
+        <img src="/src/abdullah.png" alt=""
+          class="object-cover h-60 w-60 border border-white rounded-[50%]  md:w-[450px] md:h-[450px]
+">
       </div>
 
-</div>
 
-<!-- Button  -->
- <a href="#" class="bg-[#AEEA2B] font-bold w-30 text-center rounded-lg p-2">See Portfolio</a>
-   </div>
+      <!-- Content Div  -->
+      <div class="content-div flex-1 md:max-w-xl ">
+        <div class="name flex ">
+          <img src="./hand.svg" alt="" class="w-10 mx-2">
+          <p class="text-white text-3xl md:text-4xl font-bold tracking-widest">Hi Im M Abdullah</p>
+        </div>
 
-   <!-- Showcase  -->
-    <div class="showcase grid grid-cols-3 grid-rows-2 gap-2">
+        <!-- Text  -->
+        <div class="text mt-5 flex flex-col items-center">
+          <h2 class="text-white text-xl md:text-2xl font-extrabold font-sans max-w-xl text-center">A Front-end Web
+            Developer | and Learning MERN Stack Development</h2>
+          <p class="text-[#757575] font-bold mt-5 tracking-wider text-sm md:text-md md:tracking-normal text-center">As a
+            dedicated professional an with a passion for Sift, i bring 1+ years of experience in front-end development
+            through best of my career</p>
 
-<div class="text-center bg-[#242424] col-span-2 flex flex-col justify-center rounded">
-  <h2 class="text-white font-extrabold md:text-4xl">50+</h2>
-  <p class="text-gray-200 font-bold">Projects Completed</p>
-</div>
-<div class="text-center bg-[#242424]  flex flex-col justify-center rounded">
-  <h2 class="text-white font-extrabold md:text-4xl">10+</h2>
-  <p class="text-gray-200 font-bold">HTML & CSS</p>
-</div>
-<div class="text-center bg-[#242424]  flex flex-col justify-center rounded">
-  <h2 class="text-white font-extrabold md:text-4xl">10+</h2>
-  <p class="text-gray-200 font-bold px-8">Tailwind-css</p>
-</div>
-<div class="text-center bg-[#242424] col-span-2 flex flex-col justify-center rounded">
-  <h2 class="text-white font-extrabold md:text-4xl">30+</h2>
-  <p class="text-gray-200 font-bold">HTML Tailwind & JS</p>
-</div>
+          <!-- Buttons  -->
+          <div class="btns flex gap-6 mt-5">
+            <a href=""
+              class="py-2 px-3 bg-[#AEEA2B] flex items-center justify-center gap-3 font-bold max-w-50 rounded-lg"><img
+                src="./download.png" alt="" class="w-10">Download CV</a>
 
+            <!-- Portfolio  -->
+            <a href=""
+              class="bg-transparent border border-[#AEEA2B] text-[#AEEA2B] flex justify-center items-center px-5 rounded-lg font-bold">See
+              Portfolio</a>
+          </div>
+        </div>
+      </div>
     </div>
- </div>
+
+
+  </section>
+
+
+  <!-- About Me Section  -->
+  <section class="w-full h-[70vh]">
+    <h3 class=" ml-43 md:text-4xl text-[#AEEA2B] font-extrabold text-center my-4">About Me</h3>
+
+    <!-- About Div  -->
+    <div class="about-div flex flex-col md:flex-row md:justify-center">
+
+      <!-- Text Div  -->
+      <div class="text-div flex flex-col gap-5 items-center py-4 md:items-start  md:max-w-3xl">
+        <h3 class="text-white font-extrabold font-sans text-center md:text-4xl md:text-left md:max-w-4xl">Best Front-end
+          Developer & Learning MERN Stack Development</h3>
+        <p class="text-gray-200 font-semibold max-w-4xl tracking-wide text-center md:text-left md:text-lg md:w-2xl ">At
+          Sift, we understand that success is just about delivering a product it's about building relationship and
+          making meaningful impact of clint. </p>
+
+        <!-- Skills  -->
+        <div class="about-skills text-white grid grid-cols-2 grid-rows-2 gap-2 md:gap-6 w-full">
+          <!-- Front End  -->
+          <div class="front-end col-span-1">
+            <p class="flex items-center gap-2 text-md font-bold"><i
+                class="fa-solid fa-check text-[#AEEA2B] font-extrabold text-2xl"></i>Front-end Development</p>
+
+          </div>
+
+          <!-- Back end  -->
+          <div class="back-end col-span-1 flex ">
+            <p class="flex gap-2 text-md font-bold"><i
+                class="fa-solid fa-check text-[#AEEA2B] font-extrabold text-2xl"></i>Back-end Development</p>
+
+          </div>
+
+          <!-- MERN Stack  -->
+          <div class="mernstack col-span-1">
+            <p class="flex items-center gap-2 text-md font-bold"><i
+                class="fa-solid fa-check text-[#AEEA2B] font-extrabold text-2xl"></i>MERN-Stack Development</p>
+
+          </div>
+
+          <!-- UI UX  -->
+          <div class="ui-ux col-span-1">
+            <p class="flex items-center gap-2 text-md font-bold"><i
+                class="fa-solid fa-check text-[#AEEA2B] font-extrabold text-2xl"></i>UI-UX Design</p>
+
+          </div>
+
+        </div>
+
+        <!-- Button  -->
+        <a href="#" class="bg-[#AEEA2B] font-bold w-30 text-center rounded-lg p-2">See Portfolio</a>
+      </div>
+
+      <!-- Showcase  -->
+      <div class="showcase grid grid-cols-3 grid-rows-2 gap-2">
+
+        <div class="text-center bg-[#242424] col-span-2 flex flex-col justify-center rounded">
+          <h2 class="text-white font-extrabold md:text-4xl">50+</h2>
+          <p class="text-gray-200 font-bold">Projects Completed</p>
+        </div>
+        <div class="text-center bg-[#242424]  flex flex-col justify-center rounded">
+          <h2 class="text-white font-extrabold md:text-4xl">10+</h2>
+          <p class="text-gray-200 font-bold">HTML & CSS</p>
+        </div>
+        <div class="text-center bg-[#242424]  flex flex-col justify-center rounded">
+          <h2 class="text-white font-extrabold md:text-4xl">10+</h2>
+          <p class="text-gray-200 font-bold px-8">Tailwind-css</p>
+        </div>
+        <div class="text-center bg-[#242424] col-span-2 flex flex-col justify-center rounded">
+          <h2 class="text-white font-extrabold md:text-4xl">30+</h2>
+          <p class="text-gray-200 font-bold">HTML Tailwind & JS</p>
+        </div>
+
+      </div>
+    </div>
   </section>
 
   <!-- My Services Section  -->
-   <section class="mt-5 w-full bg-[#222222] md:py-6">
+  <section class="mt-5 w-full bg-[#222222] md:py-6">
     <div class="services-title text-center">
       <h4 class="text-[#AEEA2B] font-bold">MY SERVICES</h4>
       <h2 class="text-xl text-white font-bold mb-4">MY BEST QUALITY SERVICES</h2>
@@ -159,274 +188,328 @@
 
     <!-- Skils  -->
 
-    <div class="skills grid grid-col-3 grid-rows-2 gap-2 justify-center gap-y-4 md:grid-rows-1 md:grid-cols-3 w-full mx-auto md:gap-4 md:w-[80vw] ">
+    <div
+      class="skills grid grid-col-3 grid-rows-2 gap-2 justify-center gap-y-4 md:grid-rows-1 md:grid-cols-3 w-full mx-auto md:gap-4 md:w-[80vw] ">
 
 
 
-      <div class="bg-[#343434] px-4 rounded-xl col-span-1 flex  flex-col"> 
-        
-      <h3 class="text-xl font-bold text-[#aeea2b] mt-5">FRONT-END DEVELOPMENT</h3>
-      <p class="text-gray-200 line-clamp-3 mb-2 mt-5 tracking-wide font-mono">Front-end web development builds the visual, interactive parts of websites and apps that users see and touch, using core languages like HTML for structure, CSS for styling, and JavaScript for dynamic features, focusing on user experience (UX) and user interface (UI) to create accessible, responsive, and engaging digital experiences.</p>
-<!-- Button  -->
- <a href="#" class="bg-[#464646] p-1 mb-2 max-w-25 text-white font-bold text-center rounded inset-1 shadow md:mt-6">Learn More</a>
+      <div class="bg-[#343434] px-4 rounded-xl col-span-1 flex  flex-col">
+
+        <h3 class="text-xl font-bold text-[#aeea2b] mt-5">FRONT-END DEVELOPMENT</h3>
+        <p class="text-gray-200 line-clamp-3 mb-2 mt-5 tracking-wide font-mono">Front-end web development builds the
+          visual, interactive parts of websites and apps that users see and touch, using core languages like HTML for
+          structure, CSS for styling, and JavaScript for dynamic features, focusing on user experience (UX) and user
+          interface (UI) to create accessible, responsive, and engaging digital experiences.</p>
+        <!-- Button  -->
+        <a href="#"
+          class="bg-[#464646] p-1 mb-2 max-w-25 text-white font-bold text-center rounded inset-1 shadow md:mt-6">Learn
+          More</a>
       </div>
 
       <!-- Skill 2 -->
-       <div class="bg-[#343434] px-4 rounded-xl col-span-1 flex  flex-col "> 
-        
-      <h3 class=" text-xl font-bold text-[#aeea2b] mt-5">BACK-END DEVELOPMENT</h3>
-      <p class="text-gray-200 line-clamp-3 mb-2 mt-5 tracking-wide font-mono">Back-end web development involves working on the server-side of a website or application, focusing on the logic, databases, and architecture that power the user-facing side. Unlike front-end development, which deals with the visual elements users see in their browser, back-end development is everything that happens "behind the scenes" to make an application functional, responsive, and secure. </p>
+      <div class="bg-[#343434] px-4 rounded-xl col-span-1 flex  flex-col ">
 
- <a href="#" class="bg-[#464646] p-1 mb-2 max-w-25 text-white font-bold text-center rounded inset-1 shadow md:mt-6">Learn More</a>
+        <h3 class=" text-xl font-bold text-[#aeea2b] mt-5">BACK-END DEVELOPMENT</h3>
+        <p class="text-gray-200 line-clamp-3 mb-2 mt-5 tracking-wide font-mono">Back-end web development involves
+          working on the server-side of a website or application, focusing on the logic, databases, and architecture
+          that power the user-facing side. Unlike front-end development, which deals with the visual elements users see
+          in their browser, back-end development is everything that happens "behind the scenes" to make an application
+          functional, responsive, and secure. </p>
+
+        <a href="#"
+          class="bg-[#464646] p-1 mb-2 max-w-25 text-white font-bold text-center rounded inset-1 shadow md:mt-6">Learn
+          More</a>
 
       </div>
 
       <!-- Skill 3 -->
 
-       <div class="bg-[#343434] px-4 rounded-xl col-span-3 md:col-span-1 flex  flex-col"> 
-        
-      <h3 class=" text-xl font-bold text-[#aeea2b] mt-5">UI/UX DESIGN</h3>
-<P class="text-gray-200 line-clamp-3 mt-4 tracking-wide font-mono">UX/UI design combines User Experience (UX) (overall journey, logic) and User Interface (UI) (visuals, interactivity) to create digital products that are both useful, easy to use, and visually appealing, ensuring a seamless and delightful user journey from start to finish. UX focuses on why and how users navigate a product (research, structure, flow), while UI focuses on what they see and interact with (buttons, colors, layout). </P>
+      <div class="bg-[#343434] px-4 rounded-xl col-span-3 md:col-span-1 flex  flex-col">
 
- <a href="#" class="bg-[#464646] p-1 mb-2 max-w-25 text-white font-bold text-center rounded inset-1 shadow mt-6 md:mt-9">Learn More</a>
+        <h3 class=" text-xl font-bold text-[#aeea2b] mt-5">UI/UX DESIGN</h3>
+        <P class="text-gray-200 line-clamp-3 mt-4 tracking-wide font-mono">UX/UI design combines User Experience (UX)
+          (overall journey, logic) and User Interface (UI) (visuals, interactivity) to create digital products that are
+          both useful, easy to use, and visually appealing, ensuring a seamless and delightful user journey from start
+          to finish. UX focuses on why and how users navigate a product (research, structure, flow), while UI focuses on
+          what they see and interact with (buttons, colors, layout). </P>
+
+        <a href="#"
+          class="bg-[#464646] p-1 mb-2 max-w-25 text-white font-bold text-center rounded inset-1 shadow mt-6 md:mt-9">Learn
+          More</a>
 
       </div>
-      
-      
+
+
     </div>
-   </section>
+  </section>
 
-   <!-- My Skills Section  -->
-    <section class="w-full mt-16 mb-8">
-      <div class="my-skills flex flex-col md:w-[80vw] mx-auto">
-    <!-- Skill Intro  -->
-          <div class="skill-intro flex flex-col gap-y-4">
-<h4 class="text-[#95ae4e] font-bold md:text-2xl">MY SKILLS</h4>
-<h3 class="text-white font-semibold tracking-wide md:text-4xl">LET'S EXPLORE MY POPULAR SKILLS AND EXPERIENCE</h3>
-<p class="text-gray-200 tracking-wide">We offer comprehensive Web-Development & Designing Services aimed at creating exceptional digital experience that seamlessly blend aesthetics with functionality. Our holistic approach a deep UI/UX Design & Development Skills</p>
+  <!-- My Skills Section  -->
+  <section class="w-full mt-16 mb-8">
+    <div class="my-skills flex flex-col md:w-[80vw] mx-auto">
+      <!-- Skill Intro  -->
+      <div class="skill-intro flex flex-col gap-y-4">
+        <h4 class="text-[#95ae4e] font-bold md:text-2xl">MY SKILLS</h4>
+        <h3 class="text-white font-semibold tracking-wide md:text-4xl">LET'S EXPLORE MY POPULAR SKILLS AND EXPERIENCE
+        </h3>
+        <p class="text-gray-200 tracking-wide">We offer comprehensive Web-Development & Designing Services aimed at
+          creating exceptional digital experience that seamlessly blend aesthetics with functionality. Our holistic
+          approach a deep UI/UX Design & Development Skills</p>
 
-<!-- Button  -->
- <div class="btn mb-4">
-  <a href="#" class="bg-[#aeea2b] py-1 px-2 rounded  font-semibold uppercase">See My Portfolio</a>
- </div>
+        <!-- Button  -->
+        <div class="btn mb-4">
+          <a href="#" class="bg-[#aeea2b] py-1 px-2 rounded  font-semibold uppercase">See My Portfolio</a>
+        </div>
+      </div>
+
+      <!-- Skills  -->
+      <div class="skills grid grid-cols-2 grid-rows-3 gap-9 mt-4 md:gap-y-12">
+
+        <!-- HTML  -->
+        <div class="html col-span-1 bg-[#242424] rounded min-h-auto  flex flex-col gap-4 relative ">
+
+          <!-- Icon  -->
+          <div class="icon absolute -top-3 left-4 bg-[#404040] px-4 rounded "><i
+              class="fa-brands fa-html5 text-[#AEEA2B]"></i></div>
+          <div class="text flex justify-between flex-1 px-4 mt-4 ">
+            <h3 class="text-white font-extrabold">HTML</h3>
+            <p class="text-white font-bold">100%</p>
+          </div>
+          <div class="bar h-1 w-45 bg-[#AEEA2B] rounded mb-3 ml-4"></div>
+        </div>
+
+        <!-- CSS  -->
+        <div class="html col-span-1 bg-[#242424] rounded min-h-auto  flex flex-col gap-4 relative ">
+
+          <!-- Icon  -->
+          <div class="icon absolute -top-3 left-4 bg-[#404040] px-4 rounded ">
+            <i class="fa-brands fa-css3-alt text-[#AEEA2B]"></i>
+          </div>
+          <div class="text flex justify-between flex-1 px-4 mt-4 ">
+            <h3 class="text-white font-extrabold">CSS</h3>
+            <p class="text-white font-bold">100%</p>
+          </div>
+          <div class="bar h-1 w-45 bg-[#AEEA2B] rounded mb-3 ml-4"></div>
+        </div>
+
+        <!-- Bootstrap  -->
+        <div class="html col-span-1 bg-[#242424] rounded min-h-auto  flex flex-col gap-4 relative ">
+
+          <!-- Icon  -->
+          <div class="icon absolute -top-3 left-4 bg-[#404040] px-4 rounded ">
+            <i class="fa-brands fa-bootstrap text-[#AEEA2B]"></i>
+          </div>
+          <div class="text flex justify-between flex-1 px-4 mt-4 ">
+            <h3 class="text-white font-extrabold">BOOTSTRAP</h3>
+            <p class="text-white font-bold">100%</p>
+          </div>
+          <div class="bar h-1 w-45 bg-[#AEEA2B] rounded mb-3 ml-4"></div>
+        </div>
+
+        <!-- Tailwind CSS  -->
+        <div class="html col-span-1 bg-[#242424] rounded min-h-auto  flex flex-col gap-4 relative ">
+
+          <!-- Icon  -->
+          <div class="icon absolute -top-3 left-4 bg-[#404040] px-4 rounded ">
+            <i class="fa-solid fa-file-code text-[#AEEA2B]"></i>
+          </div>
+          <div class="text flex justify-between flex-1 px-4 mt-4 ">
+            <h3 class="text-white font-extrabold">TAILWIND CSS</h3>
+            <p class="text-white font-bold">100%</p>
+          </div>
+          <div class="bar h-1 w-45 bg-[#AEEA2B] rounded mb-3 ml-4"></div>
+        </div>
+
+        <!-- UI/UX  -->
+        <div class="html col-span-1 bg-[#242424] rounded min-h-auto  flex flex-col gap-4 relative ">
+
+          <!-- Icon  -->
+          <div class="icon absolute -top-3 left-4 bg-[#404040] px-4 rounded ">
+            <i class="fa-solid fa-file-code text-[#AEEA2B]"></i>
+          </div>
+          <div class="text flex justify-between flex-1 px-4 mt-4 ">
+            <h3 class="text-white font-extrabold">UI/UX</h3>
+            <p class="text-white font-bold">50%</p>
           </div>
 
-        <!-- Skills  -->
-         <div class="skills grid grid-cols-2 grid-rows-3 gap-9 mt-4 md:gap-y-12">
+          <div class="bar h-1 w-45 bg-[linear-gradient(to_right,#AEEA2B_50%,#161616_50%)] rounded mb-3 ml-4"></div>
+        </div>
 
-          <!-- HTML  -->
-           <div class="html col-span-1 bg-[#242424] rounded min-h-auto  flex flex-col gap-4 relative ">
+        <!-- javascript  -->
+        <div class="html col-span-1 bg-[#242424] rounded min-h-auto  flex flex-col gap-4 relative ">
 
-            <!-- Icon  -->
-             <div class="icon absolute -top-3 left-4 bg-[#404040] px-4 rounded "><i class="fa-brands fa-html5 text-[#AEEA2B]"></i></div>
-           <div class="text flex justify-between flex-1 px-4 mt-4 ">
-             <h3 class="text-white font-extrabold">HTML</h3>
-            <p class="text-white font-bold">100%</p>
-           </div>
-            <div class="bar h-1 w-45 bg-[#AEEA2B] rounded mb-3 ml-4"></div>
-           </div>
-
-           <!-- CSS  -->
-             <div class="html col-span-1 bg-[#242424] rounded min-h-auto  flex flex-col gap-4 relative ">
-
-            <!-- Icon  -->
-             <div class="icon absolute -top-3 left-4 bg-[#404040] px-4 rounded ">
-             <i class="fa-brands fa-css3-alt text-[#AEEA2B]"></i>
-            </div>
-           <div class="text flex justify-between flex-1 px-4 mt-4 ">
-             <h3 class="text-white font-extrabold">CSS</h3>
-            <p class="text-white font-bold">100%</p>
-           </div>
-            <div class="bar h-1 w-45 bg-[#AEEA2B] rounded mb-3 ml-4"></div>
-           </div>
-
-           <!-- Bootstrap  -->
-             <div class="html col-span-1 bg-[#242424] rounded min-h-auto  flex flex-col gap-4 relative ">
-
-            <!-- Icon  -->
-             <div class="icon absolute -top-3 left-4 bg-[#404040] px-4 rounded ">
-<i class="fa-brands fa-bootstrap text-[#AEEA2B]"></i>           
- </div>
-           <div class="text flex justify-between flex-1 px-4 mt-4 ">
-             <h3 class="text-white font-extrabold">BOOTSTRAP</h3>
-            <p class="text-white font-bold">100%</p>
-           </div>
-            <div class="bar h-1 w-45 bg-[#AEEA2B] rounded mb-3 ml-4"></div>
-           </div>
-
-           <!-- Tailwind CSS  -->
-                 <div class="html col-span-1 bg-[#242424] rounded min-h-auto  flex flex-col gap-4 relative ">
-
-            <!-- Icon  -->
-             <div class="icon absolute -top-3 left-4 bg-[#404040] px-4 rounded ">
-<i class="fa-solid fa-file-code text-[#AEEA2B]"></i>           
- </div>
-           <div class="text flex justify-between flex-1 px-4 mt-4 ">
-             <h3 class="text-white font-extrabold">TAILWIND CSS</h3>
-            <p class="text-white font-bold">100%</p>
-           </div>
-            <div class="bar h-1 w-45 bg-[#AEEA2B] rounded mb-3 ml-4"></div>
-           </div>
-
-           <!-- UI/UX  -->
-                   <div class="html col-span-1 bg-[#242424] rounded min-h-auto  flex flex-col gap-4 relative ">
-
-            <!-- Icon  -->
-             <div class="icon absolute -top-3 left-4 bg-[#404040] px-4 rounded ">
-<i class="fa-solid fa-file-code text-[#AEEA2B]"></i>           
- </div>
-           <div class="text flex justify-between flex-1 px-4 mt-4 ">
-             <h3 class="text-white font-extrabold">UI/UX</h3>
-            <p class="text-white font-bold">50%</p>
-           </div>
-
-            <div class="bar h-1 w-45 bg-[linear-gradient(to_right,#AEEA2B_50%,#161616_50%)] rounded mb-3 ml-4"></div>
-           </div>
-
-           <!-- javascript  -->
-                    <div class="html col-span-1 bg-[#242424] rounded min-h-auto  flex flex-col gap-4 relative ">
-
-            <!-- Icon  -->
-             <div class="icon absolute -top-3 left-4 bg-[#404040] px-4 rounded ">
-<i class="fa-solid fa-file-code text-[#AEEA2B]"></i>           
- </div>
-           <div class="text flex justify-between flex-1 px-4 mt-4 ">
-             <h3 class="text-white font-extrabold">JAVASCRIPT</h3>
+          <!-- Icon  -->
+          <div class="icon absolute -top-3 left-4 bg-[#404040] px-4 rounded ">
+            <i class="fa-solid fa-file-code text-[#AEEA2B]"></i>
+          </div>
+          <div class="text flex justify-between flex-1 px-4 mt-4 ">
+            <h3 class="text-white font-extrabold">JAVASCRIPT</h3>
             <p class="text-white font-bold">80%</p>
-           </div>
+          </div>
 
-            <div class="bar h-1 w-45 bg-[linear-gradient(to_right,#AEEA2B_80%,#161616_20%)] rounded mb-3 ml-4"></div>
-           </div>
-         </div>
-
-     
-      </div>
-    </section>
-
-    <!-- Pro ject Show Section  -->
-     <section class="w-full bg-red-500 h-[50vh]">
-
-     </section>
-
-     <!-- Contact Us Section  -->
-      <section class="w-full md:mt-8 bg-[#222222] my-8 md:py-8">
-        <div class="contact-us flex flex-col md:flex-row md:w-[80vw] mx-auto md:gap-x-8">
-          <!-- Text  -->
-           <div class="contact-text flex flex-col gap-y-4 flex-1 md:flex-1">
-            <h4 class="text-[#95ae4e] font-semibold">CONTACT NOW</h4>
-            <h3 class="uppercase text-white text-2xl font-bold">Get in Touch wit us</h3>
-            <p class="text-gray-200 tracking-wide">Ready to take your digital presence to the next level? Whether you're a startup looking to establish your brand or an establish company aiming to refresh your online identity. I am here to help your company.</p>
-
-            <!-- Buttons  -->
-             <div class="btn flex gap-x-4 ">
-              <!-- Calls  -->
-               <div class="call flex  px-4 gap-x-2 py-6 flex-1 bg-[#343434] rounded ">
-                <i class="fa-solid fa-phone text-[#aee534] bg-[#424242] p-2 rounded-[50%] w-10 h-8 text-center"></i>
-
-                <!-- Text  -->
-               <div class="text flex flex-col">
-                 <h3 class="text-white font-bold ">Calls</h3>
-                 <p class="text-gray-200">+923088389163</p>
-               </div>
-               </div>
-
-               <!-- Email  -->
-                  <div class="call flex justify-center px-4 gap-x-2 py-6 flex-1 bg-[#343434] rounded ">
-                <i class="fa-solid fa-at text-[#aee534] bg-[#424242] p-2 rounded-[50%] w-10 h-8 text-center"></i>
-
-                <!-- Text  -->
-               <div class="text flex flex-col">
-                 <h3 class="text-white font-bold ">Email</h3>
-                 <p class="text-gray-200">business.mabdullah@gmail.com</p>
-               </div>
-               </div>
-             </div>
-
-           </div>
-
-           <!-- Form  -->
-            <div class="from  bg-[#343434] my-8 md:flex-1 md:px-4 md:py-4 md:rounded ">
-             
-              <h2 class="text-white font-bold uppercase my-4">Leave A Message</h2>
-
-              <form action="" class="grid grid-cols-2 grid-rows-4 gap-x-4 gap-y-4 w-full">
-                <!-- Name  -->
-                <div class="name col-span-1  bg-[#404040]">
-                  <input type="text" placeholder="Full Name" class="text-gray-200 font-bold py-2 px-1 rounded " id="nameInpt">
-                </div>
-                 <!-- Phone Number  -->
-                <div class="name col-span-1 bg-[#404040]">
-                  <input type="number" placeholder="Phone Number" class="text-gray-200 font-bold py-2 px-1 rounded " id="numInpt">
-                </div>
-
-                <!-- Email  -->
-                  <div class="name col-span-2  bg-[#404040]">
-                  <input type="text" placeholder="Email Address" class="text-gray-200 font-bold py-2 px-1 rounded " id="mailInpt" required>
-                </div>
-
-                <!-- Message  -->
-                  <div class="name col-span-2 row-span-2  bg-[#404040]">
-                  <textarea name="message" placeholder="Message" id="" class="text-gray-200 font-bold py-2 px-1 rounded"></textarea>
-                </div>
-
-                <!-- button  -->
-                 <div class="btn my-2">
-                  <button id="submit" class="bg-[#b4e732] px-2 py-1 font-bold rounded md:w-40 md:text-2xl ">Submit</button>
-                 </div>
-              </form>
-            </div>
+          <div class="bar h-1 w-45 bg-[linear-gradient(to_right,#AEEA2B_80%,#161616_20%)] rounded mb-3 ml-4"></div>
         </div>
-      </section>
+      </div>
 
-      <!-- Footer ...............................................  -->
-       <section class="w-full">
-        <footer class="flex flex-col items-center">
-<div class="flex flex-col items-center border-b border-[#292929] pb-4">
-  <h4 class="text-[#a0b279] font-bold text-center">SUBSCRIBE NEWSLETTER</h4>
-  <h2 class="text-white font-extrabold text-2xl md:w-130 md:text-4xl ">STAY UPTO DATED WITH US</h2>
-  <div class="input text-center flex justify-centerw-full my-4">
-    <input type="email" placeholder="Email Address" class="text-gray-200 font-bold  py-2 px-1 bg-[#292929] rounded relative md:relative w-80 ">
-    <button class="bg-[#afeb2c] absolute md:absolute md:right-150 right-10 rounded px-2 py-2">SUBSCRIBE NOW</button>
-  </div>
 
-  <!-- Social icons  -->
-   <div class="s-icons grid grid-cols-3 grid-rows-2 gap-4">
-    <!-- Facebook  -->
-     <div class="facebook col-span-1">
-      <a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-facebook"></i> Facebook</a>
     </div>
+  </section>
 
-    <!-- Instagram  -->
-     <div class="instagram col-span-1">
-      <a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-instagram"></i> Instagram</a>
+  <!-- Pro ject Show Section  -->
+  <!-- <section class="w-full bg-red-500 h-[50vh]"> -->
+  <!-- <div class="projects">
+  <div class="cards">
+    <div class="card" id="card"> -->
+  <!-- Card Title  -->
+  <!-- <h2 id="cardTitle"></h2>
+      <p id="cardDes"></p>
+      <img src="" alt="" id="dispImg">
+      <a href="" id="live"></a>
+      <p id="tech"></p> -->
 
-     </div>
+  <!-- </div>
+  </div>
+</div>
+     </section> -->
 
-     <!-- Linkedin  -->
-      <div class="linkedin col-span-1">
-        <a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+  <!-- Contact Us Section  -->
+  <section class="w-full md:mt-8 bg-[#222222] my-8 md:py-8">
+    <div class="contact-us flex flex-col md:flex-row md:w-[80vw] mx-auto md:gap-x-8">
+      <!-- Text  -->
+      <div class="contact-text flex flex-col gap-y-4 flex-1 md:flex-1">
+        <h4 class="text-[#95ae4e] font-semibold">CONTACT NOW</h4>
+        <h3 class="uppercase text-white text-2xl font-bold">Get in Touch wit us</h3>
+        <p class="text-gray-200 tracking-wide">Ready to take your digital presence to the next level? Whether you're a
+          startup looking to establish your brand or an establish company aiming to refresh your online identity. I am
+          here to help your company.</p>
+
+        <!-- Buttons  -->
+        <div class="btn  gap-y-4 grid grid-cols-1 grid-rows-2 ">
+          <!-- Calls  -->
+          <div class="call flex  px-4 gap-x-2 py-6 flex-1 bg-[#343434] rounded  ">
+            <i class="fa-solid fa-phone text-[#aee534] bg-[#424242] p-2 rounded-[50%] w-10 h-8 text-center"></i>
+
+            <!-- Text  -->
+            <div class="text flex flex-col">
+              <h3 class="text-white font-bold ">Calls</h3>
+              <p class="text-gray-200">+923088389163</p>
+            </div>
+          </div>
+
+          <!-- Email  -->
+          <div class="call flex  px-4 gap-x-2 py-6 flex-1 bg-[#343434] rounded ">
+            <i class="fa-solid fa-at text-[#aee534] bg-[#424242] p-2 rounded-[50%] w-10 h-8 text-center"></i>
+
+            <!-- Text  -->
+            <div class="text flex flex-col">
+              <h3 class="text-white font-bold ">Email</h3>
+              <p class="text-gray-200">business.mabdullah@gmail.com</p>
+            </div>
+          </div>
+
+        </div>
 
       </div>
 
-      <!-- Youtube  -->
-       <div class="youtube col-span-2">
-        <a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-youtube"></i> Youtube</a>
+      <!-- Form  -->
+      <div class="from  bg-[#343434] my-8 md:flex-1 md:px-4 md:py-4 md:rounded ">
 
-       </div>
+        <h2 class="text-white font-bold uppercase my-4">Leave A Message</h2>
 
-       <!-- Github  -->
-        <div class="github col-span-1">
-          <a href="" class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i class="fa-brands fa-github"></i> Github</a>
+        <form action="" class="grid grid-cols-2 grid-rows-4 gap-x-4 gap-y-4 w-full">
+          <!-- Name  -->
+          <div class="name col-span-1  bg-[#404040]">
+            <input type="text" placeholder="Full Name" class="text-gray-200 font-bold py-2 px-1 rounded " id="nameInpt">
+          </div>
+          <!-- Phone Number  -->
+          <div class="name col-span-1 bg-[#404040]">
+            <input type="number" placeholder="Phone Number" class="text-gray-200 font-bold py-2 px-1 rounded "
+              id="numInpt">
+          </div>
 
+          <!-- Email  -->
+          <div class="name col-span-2  bg-[#404040]">
+            <input type="text" placeholder="Email Address" class="text-gray-200 font-bold py-2 px-1 rounded "
+              id="mailInpt" required>
+          </div>
+
+          <!-- Message  -->
+          <div class="name col-span-2 row-span-2  bg-[#404040]">
+            <textarea name="message" placeholder="Message" id=""
+              class="text-gray-200 font-bold py-2 px-1 rounded"></textarea>
+          </div>
+
+          <!-- button  -->
+          <div class="btn my-2">
+            <button id="submit" class="bg-[#b4e732] px-2 py-1 font-bold rounded md:w-40 md:text-2xl ">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer ...............................................  -->
+  <section class="w-full">
+    <footer class="flex flex-col items-center">
+      <div class="flex flex-col items-center border-b border-[#292929] pb-4">
+        <h4 class="text-[#a0b279] font-bold text-center">SUBSCRIBE NEWSLETTER</h4>
+        <h2 class="text-white font-extrabold text-2xl md:w-130 md:text-4xl ">STAY UPTO DATED WITH US</h2>
+        <div class="input text-center flex justify-centerw-full my-4">
+          <input type="email" placeholder="Email Address"
+            class="text-gray-200 font-bold  py-2 px-1 bg-[#292929] rounded relative md:relative w-80 ">
+          <button class="bg-[#afeb2c] absolute md:absolute md:right-150 right-10 rounded px-2 py-2">SUBSCRIBE
+            NOW</button>
         </div>
-   </div>
-</div>
 
-<p class="text-center text-gray-200 font-bold my-4">© 2026 Personal Portfolio. All Rights Reserved Developed By M.Abdullah</p>
-        </footer>
-       </section>
+        <!-- Social icons  -->
+        <div class="s-icons grid grid-cols-3 grid-rows-2 gap-4 md:grid-cols-5 md:grid-rows-1">
+          <!-- Facebook  -->
+          <div class="facebook col-span-1">
+            <a href=""
+              class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i
+                class="fa-brands fa-facebook"></i> Facebook</a>
+          </div>
+
+          <!-- Instagram  -->
+          <div class="instagram col-span-1">
+            <a href=""
+              class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i
+                class="fa-brands fa-instagram"></i> Instagram</a>
+
+          </div>
+
+          <!-- Linkedin  -->
+          <div class="linkedin col-span-1">
+            <a href=""
+              class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i
+                class="fa-brands fa-linkedin"></i> Linkedin</a>
+
+          </div>
+
+          <!-- Youtube  -->
+          <div class="youtube col-span-2 md:col-span-1">
+            <a href=""
+              class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i
+                class="fa-brands fa-youtube"></i> Youtube</a>
+
+          </div>
+
+          <!-- Github  -->
+          <div class="github col-span-1">
+            <a href=""
+              class="bg-[#292929] flex justify-center items-center gap-x-2 text-white flex-1 px-4 rounded  py-2"><i
+                class="fa-brands fa-github"></i> Github</a>
+
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-gray-200 font-bold my-4">© 2026 Personal Portfolio. All Rights Reserved Developed By
+        M.Abdullah</p>
+    </footer>
+  </section>
 
   <!-- Java Script  -->
-   <script src="/script.js"></script>
+  <script src="/script.js"></script>
 </body>
+
 </html>
