@@ -1,0 +1,431 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>About Us | StyleStore</title>
+<link rel="stylesheet" href="/src/aboutUs.css">
+  
+</head>
+
+<body class="bg-[#f4f4f6] text-gray-800 overflow-x-hidden">
+
+  <!-- ───── HEADER ───── -->
+  <section class="w-full h-[15%] bg-[#f85606] hidden md:block lg:block py-5 mx-auto">
+
+    <!-- Nav bar -->
+    <div class="navbar w-full mx-auto">
+      <nav class=" flex justify-center w-[80%] mx-auto">
+
+        <!-- Nav Links.............  -->
+<div class="nav-links flex justify-center gap-5 w-[40%] text-white font-semibold text-sm font-inter">
+ <ul class="flex gap-5">
+  <li><a href="/index.html">Home</a></li>
+  <li class="group relative"><a href="/src/homePage.html#shop">Shop</a>
+ 
+  </li>
+  <li><a href="/src/aboutUs.html">About Us</a></li>
+  <li><a href="/src/contactUs.html">Contact Us</a></li>
+ </ul>
+</div>
+
+<!-- Search Bar  -->
+
+
+<!-- Cart  -->
+
+      </nav>
+    </div>
+  </section>
+
+  <!-- ───── HERO ───── -->
+  <section class="brand-bg w-full py-20 px-4 relative overflow-hidden">
+    <div class="absolute -top-16 -left-16 w-64 h-64 rounded-full bg-white opacity-5"></div>
+    <div class="absolute -bottom-16 -right-16 w-80 h-80 rounded-full bg-white opacity-5"></div>
+    <div class="absolute top-10 right-[20%] w-20 h-20 rounded-full bg-white opacity-5"></div>
+
+    <div class="w-[85%] mx-auto flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1 text-white">
+        <p class="text-white/60 text-sm uppercase tracking-widest mb-3 font-medium">Our Story</p>
+        <h1 class="font-bold text-4xl md:text-5xl leading-tight mb-4">
+          Pakistan's Most Loved<br>
+          <span class="text-white/80">MEN'S Fashion Store</span>
+        </h1>
+        <p class="text-white/75 text-base leading-relaxed max-w-lg">
+          From a small shop in Bahawalnagar to thousands of happy customers across Pakistan — StyleStore was built on one promise: premium fashion at prices everyone can afford.
+        </p>
+        <div class="flex gap-4 mt-8">
+          <a href="#story" class="bg-white text-[#f85606] font-semibold px-6 py-3 rounded-lg text-sm hover:bg-orange-50 transition">Our Journey</a>
+          <a href="/src/homePage.html#shop" class="border-2 border-white text-white font-semibold px-6 py-3 rounded-lg text-sm hover:bg-white/10 transition">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- icon illustration -->
+      <div class="flex-1 flex justify-center">
+        <div class="relative w-64 h-64">
+          <div class="absolute inset-0 bg-white/10 rounded-full"></div>
+          <div class="absolute inset-6 bg-white/10 rounded-full flex items-center justify-center">
+            <div class="text-center">
+              <div class="text-7xl mb-2">🛍️</div>
+              <p class="text-white font-bold text-lg">StyleStore</p>
+              <p class="text-white/60 text-xs">Est. 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── STATS ───── -->
+  <section class="w-[90%] mx-auto -mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10 mb-16">
+
+    <div class="stat-card bg-white rounded-xl p-6 text-center shadow-sm border border-gray-100">
+      <p class="text-3xl font-bold brand" id="statCustomers">0</p>
+      <p class="text-gray-500 text-sm mt-1">Happy Customers</p>
+    </div>
+    <div class="stat-card bg-white rounded-xl p-6 text-center shadow-sm border border-gray-100" style="animation-delay:0.1s">
+      <p class="text-3xl font-bold brand" id="statProducts">0</p>
+      <p class="text-gray-500 text-sm mt-1">Products Listed</p>
+    </div>
+    <div class="stat-card bg-white rounded-xl p-6 text-center shadow-sm border border-gray-100" style="animation-delay:0.2s">
+      <p class="text-3xl font-bold brand" id="statCities">0</p>
+      <p class="text-gray-500 text-sm mt-1">Cities Delivered</p>
+    </div>
+    <div class="stat-card bg-white rounded-xl p-6 text-center shadow-sm border border-gray-100" style="animation-delay:0.3s">
+      <p class="text-3xl font-bold brand" id="statYears">0</p>
+      <p class="text-gray-500 text-sm mt-1">Years in Business</p>
+    </div>
+
+  </section>
+
+  <!-- ───── STORY ───── -->
+  <section class="w-[90%] mx-auto mb-16 reveal" id="story">
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+      <!-- Text -->
+      <div>
+        <p class="text-xs brand font-semibold uppercase tracking-widest mb-2">Who We Are</p>
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Born in Bahawalnagar.<br>Built for Pakistan.</h2>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">
+          StyleStore started in 2026 as a small clothing outlet in Bahawalnagar, Punjab. Our founder M Abdullah noticed that men across Pakistan struggled to find quality watches, stylish t-shirts, and good shoes at honest prices — so he set out to fix that.
+        </p>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">
+          What began as a local shop quickly grew online. Today we serve thousands of customers from Karachi to Peshawar, with every order packed with care and delivered reliably.
+        </p>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          We don't just sell clothes — we help people feel confident every day.
+        </p>
+      </div>
+
+      <!-- Image placeholder -->
+      <div class="rounded-xl overflow-hidden bg-[#f4f4f6] h-64 flex items-center justify-center relative">
+        <div class="absolute inset-0 opacity-10">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.5" fill="#f85606"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#dots)"/>
+          </svg>
+        </div>
+        <div class="relative text-center">
+          <div class="text-6xl mb-3">🏪</div>
+          <p class="font-semibold text-gray-600">Our Store, Bahawalnagar</p>
+          <p class="text-gray-400 text-xs mt-1">Since 2026</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───── MISSION & VISION ───── -->
+  <section class="w-[90%] mx-auto mb-16 grid grid-cols-1 md:grid-cols-2 gap-6 reveal">
+
+    <div class="bg-[#f85606] rounded-2xl p-8 text-white relative overflow-hidden">
+      <div class="absolute -bottom-8 -right-8 w-32 h-32 rounded-full bg-white opacity-10"></div>
+      <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-5">
+        <i class="fa-solid fa-bullseye text-white text-lg"></i>
+      </div>
+      <h3 class="text-xl font-bold mb-3">Our Mission</h3>
+      <p class="text-white/80 text-sm leading-relaxed">
+        To make premium men's fashion accessible to every Pakistani — whether you're in Lahore, Karachi, or a small city like Sahiwal. Quality should never be a luxury.
+      </p>
+    </div>
+
+    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm relative overflow-hidden">
+      <div class="absolute -bottom-8 -right-8 w-32 h-32 rounded-full bg-[#f85606] opacity-5"></div>
+      <div class="w-12 h-12 brand-bg rounded-full flex items-center justify-center mb-5">
+        <i class="fa-solid fa-eye text-white text-lg"></i>
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-3">Our Vision</h3>
+      <p class="text-gray-500 text-sm leading-relaxed">
+        To become Pakistan's most trusted online fashion destination — known for honest pricing, fast delivery, and a brand that genuinely cares about its customers.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- ───── OUR VALUES ───── -->
+  <section class="w-[90%] mx-auto mb-16 reveal">
+    <div class="text-center mb-10">
+      <p class="text-xs brand font-semibold uppercase tracking-widest mb-2">What Drives Us</p>
+      <h2 class="text-3xl font-bold text-gray-800">Our Core Values</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+
+      <div class="value-card bg-white rounded-xl p-6 text-center border border-gray-100 shadow-sm">
+        <div class="w-14 h-14 brand-bg rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <i class="fa-solid fa-star text-white text-xl"></i>
+        </div>
+        <h4 class="font-semibold text-gray-800 mb-2">Quality First</h4>
+        <p class="text-gray-400 text-xs leading-relaxed">Every product is carefully selected. No compromises on quality.</p>
+      </div>
+
+      <div class="value-card bg-white rounded-xl p-6 text-center border border-gray-100 shadow-sm">
+        <div class="w-14 h-14 brand-bg rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <i class="fa-solid fa-tag text-white text-xl"></i>
+        </div>
+        <h4 class="font-semibold text-gray-800 mb-2">Fair Pricing</h4>
+        <p class="text-gray-400 text-xs leading-relaxed">Premium products at prices that respect your budget.</p>
+      </div>
+
+      <div class="value-card bg-white rounded-xl p-6 text-center border border-gray-100 shadow-sm">
+        <div class="w-14 h-14 brand-bg rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <i class="fa-solid fa-truck-fast text-white text-xl"></i>
+        </div>
+        <h4 class="font-semibold text-gray-800 mb-2">Fast Delivery</h4>
+        <p class="text-gray-400 text-xs leading-relaxed">Order today, receive within 3–5 days anywhere in Pakistan.</p>
+      </div>
+
+      <div class="value-card bg-white rounded-xl p-6 text-center border border-gray-100 shadow-sm">
+        <div class="w-14 h-14 brand-bg rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <i class="fa-solid fa-heart text-white text-xl"></i>
+        </div>
+        <h4 class="font-semibold text-gray-800 mb-2">Customer Love</h4>
+        <p class="text-gray-400 text-xs leading-relaxed">Your satisfaction is not a target — it's our standard.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───── JOURNEY TIMELINE ───── -->
+  <section class="w-[90%] mx-auto mb-16 reveal">
+    <div class="text-center mb-10">
+      <p class="text-xs brand font-semibold uppercase tracking-widest mb-2">How We Got Here</p>
+      <h2 class="text-3xl font-bold text-gray-800">Our Journey</h2>
+    </div>
+
+    <div class="max-w-xl mx-auto">
+
+      <div class="relative timeline-item pl-14 pb-10">
+        <div class="absolute left-0 top-0 w-10 h-10 brand-bg rounded-full flex items-center justify-center text-white font-bold text-sm shadow">20</div>
+        <h4 class="font-semibold text-gray-800">FEB 2026 — The Beginning</h4>
+        <p class="text-gray-500 text-sm mt-1 leading-relaxed">Opened our first physical shop in Sahiwal with a small collection of t-shirts and watches. Word of mouth made us popular locally.</p>
+      </div>
+
+      <div class="relative timeline-item pl-14 pb-10">
+        <div class="absolute left-0 top-0 w-10 h-10 brand-bg rounded-full flex items-center justify-center text-white font-bold text-sm shadow">21</div>
+        <h4 class="font-semibold text-gray-800">MARCH 2026 — Going Online</h4>
+        <p class="text-gray-500 text-sm mt-1 leading-relaxed">Launched our first website and started taking orders from across Punjab. Added shoes to our product line.</p>
+      </div>
+
+      <div class="relative timeline-item pl-14 pb-10">
+        <div class="absolute left-0 top-0 w-10 h-10 brand-bg rounded-full flex items-center justify-center text-white font-bold text-sm shadow">23</div>
+        <h4 class="font-semibold text-gray-800">APRIL 2026 — Nationwide Growth</h4>
+        <p class="text-gray-500 text-sm mt-1 leading-relaxed">Expanded delivery to all major cities in Pakistan. Crossed 5,000 happy customers milestone.</p>
+      </div>
+
+      <div class="relative timeline-item pl-14">
+        <div class="absolute left-0 top-0 w-10 h-10 brand-bg rounded-full flex items-center justify-center text-white font-bold text-sm shadow">26</div>
+        <h4 class="font-semibold text-gray-800">2026 — Today</h4>
+        <p class="text-gray-500 text-sm mt-1 leading-relaxed">Serving thousands of customers with 100+ products, same-day dispatch, and a dedicated support team. Still growing.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───── WHY CHOOSE US ───── -->
+  <section class="w-[90%] mx-auto mb-16 reveal">
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-12">
+      <div class="text-center mb-10">
+        <p class="text-xs brand font-semibold uppercase tracking-widest mb-2">Why StyleStore</p>
+        <h2 class="text-3xl font-bold text-gray-800">What Makes Us Different</h2>
+      </div>
+
+      <div class="space-y-5">
+
+        <div>
+          <div class="flex justify-between text-sm font-medium text-gray-700 mb-1">
+            <span>Customer Satisfaction</span><span class="brand">97%</span>
+          </div>
+          <div class="w-full bg-gray-100 rounded-full h-2.5">
+            <div class="brand-bg h-2.5 rounded-full progress-fill" data-width="97"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between text-sm font-medium text-gray-700 mb-1">
+            <span>On-Time Delivery</span><span class="brand">93%</span>
+          </div>
+          <div class="w-full bg-gray-100 rounded-full h-2.5">
+            <div class="brand-bg h-2.5 rounded-full progress-fill" data-width="93"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between text-sm font-medium text-gray-700 mb-1">
+            <span>Product Quality Rating</span><span class="brand">95%</span>
+          </div>
+          <div class="w-full bg-gray-100 rounded-full h-2.5">
+            <div class="brand-bg h-2.5 rounded-full progress-fill" data-width="95"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between text-sm font-medium text-gray-700 mb-1">
+            <span>Return & Refund Resolution</span><span class="brand">99%</span>
+          </div>
+          <div class="w-full bg-gray-100 rounded-full h-2.5">
+            <div class="brand-bg h-2.5 rounded-full progress-fill" data-width="99"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── TEAM ───── -->
+  <section class="w-[90%] mx-auto mb-16 reveal">
+    <div class="text-center mb-10">
+      <p class="text-xs brand font-semibold uppercase tracking-widest mb-2">The People Behind StyleStore</p>
+      <h2 class="text-3xl font-bold text-gray-800">Meet Our Team</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+      <div class="team-card bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
+        <div class="w-20 h-20 brand-bg rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">👨‍💼</div>
+        <h4 class="font-semibold text-gray-800">M Abdullah</h4>
+        <p class="brand text-xs font-medium mt-0.5 mb-2">Founder & CEO</p>
+        <p class="text-gray-400 text-xs leading-relaxed">Visionary behind StyleStore. 6 years in retail & e-commerce.</p>
+        <div class="flex justify-center gap-3 mt-4 text-gray-300 text-sm">
+          <a href="#" class="hover:text-[#f85606] transition"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="hover:text-[#f85606] transition"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="team-card bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
+        <div class="w-20 h-20 brand-bg rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">👩‍💻</div>
+        <h4 class="font-semibold text-gray-800">Sara Khan</h4>
+        <p class="brand text-xs font-medium mt-0.5 mb-2">Head of Design</p>
+        <p class="text-gray-400 text-xs leading-relaxed">Creates the look and feel. 4 years in UI/UX & brand identity.</p>
+        <div class="flex justify-center gap-3 mt-4 text-gray-300 text-sm">
+          <a href="#" class="hover:text-[#f85606] transition"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="hover:text-[#f85606] transition"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="team-card bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
+        <div class="w-20 h-20 brand-bg rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">👨‍🔧</div>
+        <h4 class="font-semibold text-gray-800">Bilal Raza</h4>
+        <p class="brand text-xs font-medium mt-0.5 mb-2">Operations Manager</p>
+        <p class="text-gray-400 text-xs leading-relaxed">Ensures every order is packed and dispatched on time.</p>
+        <div class="flex justify-center gap-3 mt-4 text-gray-300 text-sm">
+          <a href="#" class="hover:text-[#f85606] transition"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="hover:text-[#f85606] transition"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="team-card bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
+        <div class="w-20 h-20 brand-bg rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">👩‍💬</div>
+        <h4 class="font-semibold text-gray-800">Zara Malik</h4>
+        <p class="brand text-xs font-medium mt-0.5 mb-2">Customer Support</p>
+        <p class="text-gray-400 text-xs leading-relaxed">Always here to help. Resolves queries within hours, not days.</p>
+        <div class="flex justify-center gap-3 mt-4 text-gray-300 text-sm">
+          <a href="#" class="hover:text-[#f85606] transition"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="hover:text-[#f85606] transition"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───── TESTIMONIALS ───── -->
+  <section class="w-[90%] mx-auto mb-16 reveal">
+    <div class="text-center mb-10">
+      <p class="text-xs brand font-semibold uppercase tracking-widest mb-2">Real Reviews</p>
+      <h2 class="text-3xl font-bold text-gray-800">What Our Customers Say</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm relative">
+        <div class="text-[#f85606] text-xl mb-3">★★★★★</div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">"Ordered a watch and a t-shirt. Both arrived in 3 days, quality is amazing. Will definitely order again!"</p>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 brand-bg rounded-full flex items-center justify-center text-white text-sm font-bold">U</div>
+          <div>
+            <p class="text-sm font-semibold text-gray-800">Usman Tariq</p>
+            <p class="text-xs text-gray-400">Lahore</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm relative">
+        <div class="text-[#f85606] text-xl mb-3">★★★★★</div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">"Best online store in Pakistan for men's fashion. Prices are very reasonable and the COD option is very convenient."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 brand-bg rounded-full flex items-center justify-center text-white text-sm font-bold">F</div>
+          <div>
+            <p class="text-sm font-semibold text-gray-800">Fahad Mehmood</p>
+            <p class="text-xs text-gray-400">Karachi</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm relative">
+        <div class="text-[#f85606] text-xl mb-3">★★★★☆</div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">"Customer support is very helpful. Had a size issue and they sorted it out immediately. Highly recommended!"</p>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 brand-bg rounded-full flex items-center justify-center text-white text-sm font-bold">A</div>
+          <div>
+            <p class="text-sm font-semibold text-gray-800">Asad Iqbal</p>
+            <p class="text-xs text-gray-400">Islamabad</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───── CTA ───── -->
+  <section class="w-[90%] mx-auto mb-16 reveal">
+    <div class="brand-bg rounded-2xl p-10 text-center text-white relative overflow-hidden">
+      <div class="absolute -top-10 -left-10 w-40 h-40 rounded-full bg-white opacity-5"></div>
+      <div class="absolute -bottom-10 -right-10 w-52 h-52 rounded-full bg-white opacity-5"></div>
+      <h2 class="text-3xl font-bold mb-3 relative">Ready to Upgrade Your Style?</h2>
+      <p class="text-white/75 text-sm mb-7 relative">Shop the latest collection — watches, t-shirts, and shoes delivered to your door.</p>
+      <div class="flex justify-center gap-4 flex-wrap relative">
+        <a href="/src/homePage.html#shop" class="bg-white text-[#f85606] font-semibold px-8 py-3 rounded-lg text-sm hover:bg-orange-50 transition">Shop Now</a>
+        <a href="/src/contactUs.html" class="border-2 border-white text-white font-semibold px-8 py-3 rounded-lg text-sm hover:bg-white/10 transition">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="bg-white border-t border-gray-100 py-6 text-center text-sm text-gray-400">
+    &copy; 2026 StyleStore. Made By <span class="brand">M Abdullah</span> in Bahawalnagar, Pakistan.
+  </footer>
+
+  <!-- ───── JS ───── -->
+  <script src="/src/Js/aboutUs.js"></script>
+
+</body>
+</html>

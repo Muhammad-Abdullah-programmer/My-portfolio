@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+
+  <!-- Font awesome Cdn  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<!-- CSS File  -->
+ <link rel="stylesheet" href="/src/style.css">
+ <link rel="stylesheet" href="contactUs.css">
+</head>
+
+ 
+
+
+
+
+  <body class="bg-[#f4f4f6] text-gray-800 overflow-x-hidden">
+ 
+  <!-- ───── HEADER ───── -->
+  <section class="w-full h-[15%] bg-[#f85606] hidden md:block lg:block py-5 mx-auto">
+
+    <!-- Nav bar -->
+    <div class="navbar w-full mx-auto">
+      <nav class=" flex justify-center w-[80%] mx-auto">
+
+        <!-- Nav Links.............  -->
+<div class="nav-links flex justify-center gap-5 w-[40%] text-white font-semibold text-sm font-inter">
+ <ul class="flex gap-5">
+  <li><a href="/index.html">Home</a></li>
+  <li class="group relative"><a href="/src/homePage.html#shop">Shop</a>
+ 
+  </li>
+  <li><a href="/src/aboutUs.html">About Us</a></li>
+  <li><a href="/src/contactUs.html">Contact Us</a></li>
+ </ul>
+</div>
+
+<!-- Search Bar  -->
+
+
+<!-- Cart  -->
+
+      </nav>
+    </div>
+  </section>
+ 
+  <!-- ───── HERO BANNER ───── -->
+  <section class="brand-bg w-full py-16 px-4 text-center relative overflow-hidden mt-40">
+    <!-- decorative circles -->
+    <div class="absolute -top-10 -left-10 w-48 h-48 rounded-full bg-white opacity-5"></div>
+    <div class="absolute -bottom-10 -right-10 w-64 h-64 rounded-full bg-white opacity-5"></div>
+ 
+    <p class="text-white/70 text-sm uppercase tracking-widest mb-2 font-medium">We'd love to hear from you</p>
+    <h1 class="text-white font-bold text-4xl md:text-5xl mb-3">Contact Us</h1>
+    <p class="text-white/80 text-base max-w-md mx-auto">Have a question, complaint, or just want to say hello? We're here 7 days a week.</p>
+  </section>
+ 
+  <!-- ───── INFO CARDS ───── -->
+  <section class="w-[90%] mx-auto -mt-8 grid grid-cols-1 md:grid-cols-3 gap-5 relative z-10 mb-12">
+ 
+    <div class="info-card bg-white rounded-xl p-6 flex flex-col items-center text-center shadow-sm border border-gray-100">
+      <div class="w-14 h-14 brand-bg rounded-full flex items-center justify-center mb-4">
+        <i class="fa-solid fa-phone text-white text-xl"></i>
+      </div>
+      <h3 class="font-semibold text-gray-800 mb-1">Call Us</h3>
+      <p class="text-gray-500 text-sm mb-1">Mon–Sat, 9am–6pm</p>
+      <a href="tel:+923001234567" class="brand font-semibold text-sm hover:underline">+923088389163</a>
+    </div>
+ 
+    <div class="info-card bg-white rounded-xl p-6 flex flex-col items-center text-center shadow-sm border border-gray-100">
+      <div class="w-14 h-14 brand-bg rounded-full flex items-center justify-center mb-4">
+        <i class="fa-solid fa-envelope text-white text-xl"></i>
+      </div>
+      <h3 class="font-semibold text-gray-800 mb-1">Email Us</h3>
+      <p class="text-gray-500 text-sm mb-1">Reply within 24 hours</p>
+      <a href="mailto:support@stylestore.pk" class="brand font-semibold text-sm hover:underline">business.mabdullah@gmail.com</a>
+    </div>
+ 
+    <div class="info-card bg-white rounded-xl p-6 flex flex-col items-center text-center shadow-sm border border-gray-100">
+      <div class="w-14 h-14 brand-bg rounded-full flex items-center justify-center mb-4">
+        <i class="fa-solid fa-location-dot text-white text-xl"></i>
+      </div>
+      <h3 class="font-semibold text-gray-800 mb-1">Visit Us</h3>
+      <p class="text-gray-500 text-sm mb-1">Walk-in welcome</p>
+      <p class="brand font-semibold text-sm">Bahawalnagar, Punjab, Pakistan</p>
+    </div>
+ 
+  </section>
+ 
+  <!-- ───── FORM + MAP ───── -->
+  <section class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+ 
+    <!-- Contact Form -->
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-1">Send a Message</h2>
+      <p class="text-gray-500 text-sm mb-6">Fill out the form and we'll get back to you shortly.</p>
+ 
+      <form id="contactForm" novalidate>
+ 
+        <!-- Name -->
+        <div class="mb-5">
+          <label class="block text-sm font-medium text-gray-700 mb-1">Full Name <span class="text-[#f85606]">*</span></label>
+          <input type="text" id="nameInput" placeholder="e.g. Ahmed Ali"
+            class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm bg-[#fafafa] transition">
+          <p class="text-red-500 text-xs mt-1 hidden" id="nameErr">Please enter your name.</p>
+        </div>
+ 
+        <!-- Email -->
+        <div class="mb-5">
+          <label class="block text-sm font-medium text-gray-700 mb-1">Email Address <span class="text-[#f85606]">*</span></label>
+          <input type="email" id="emailInput" placeholder="you@example.com"
+            class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm bg-[#fafafa] transition">
+          <p class="text-red-500 text-xs mt-1 hidden" id="emailErr">Please enter a valid email.</p>
+        </div>
+ 
+        <!-- Phone -->
+        <div class="mb-5">
+          <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+          <input type="tel" id="phoneInput" placeholder="+92 300 000 0000"
+            class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm bg-[#fafafa] transition">
+        </div>
+ 
+        <!-- Subject -->
+        <div class="mb-5">
+          <label class="block text-sm font-medium text-gray-700 mb-1">Subject <span class="text-[#f85606]">*</span></label>
+          <select id="subjectInput" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm bg-[#fafafa] transition text-gray-600">
+            <option value="">Select a topic</option>
+            <option>Order Issue</option>
+            <option>Return / Refund</option>
+            <option>Product Inquiry</option>
+            <option>Shipping Question</option>
+            <option>General Feedback</option>
+            <option>Other</option>
+          </select>
+          <p class="text-red-500 text-xs mt-1 hidden" id="subjectErr">Please select a subject.</p>
+        </div>
+ 
+        <!-- Message -->
+        <div class="mb-6">
+          <label class="block text-sm font-medium text-gray-700 mb-1">Message <span class="text-[#f85606]">*</span></label>
+          <textarea id="messageInput" rows="4" placeholder="Write your message here..."
+            class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm bg-[#fafafa] transition resize-none"></textarea>
+          <p class="text-red-500 text-xs mt-1 hidden" id="messageErr">Please enter your message.</p>
+        </div>
+ 
+        <button type="submit" id="submitBtn"
+          class="submit-btn brand-bg text-white w-full py-3 rounded-lg font-semibold text-sm tracking-wide">
+          Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+        </button>
+ 
+      </form>
+    </div>
+ 
+    <!-- Right Side: Map + Social + Hours -->
+    <div class="flex flex-col gap-6">
+ 
+      <!-- Fake Map -->
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+        <div class="relative w-full h-52 bg-[#e8e8e8] flex items-center justify-center">
+          <!-- Grid lines for map feel -->
+          <svg class="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+                <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#888" stroke-width="0.5"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)"/>
+          </svg>
+          <!-- Roads -->
+          <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="104" x2="100%" y2="104" stroke="#ccc" stroke-width="6"/>
+            <line x1="0" y1="104" x2="100%" y2="104" stroke="white" stroke-width="2" stroke-dasharray="12 8"/>
+            <line x1="180" y1="0" x2="180" y2="100%" stroke="#ccc" stroke-width="6"/>
+            <line x1="340" y1="0" x2="340" y2="100%" stroke="#ddd" stroke-width="3"/>
+            <line x1="0" y1="60" x2="100%" y2="60" stroke="#ddd" stroke-width="3"/>
+          </svg>
+          <!-- Pin -->
+          <div class="relative z-10 flex flex-col items-center">
+            <div class="w-10 h-10 brand-bg rounded-full flex items-center justify-center shadow-lg">
+              <i class="fa-solid fa-store text-white text-sm"></i>
+            </div>
+            <div class="mt-1 bg-white text-xs font-semibold px-2 py-0.5 rounded shadow brand">StyleStore</div>
+          </div>
+        </div>
+        <div class="px-5 py-4 flex items-center gap-3">
+          <i class="fa-solid fa-location-dot brand text-lg"></i>
+          <div>
+            <p class="text-sm font-medium text-gray-800">XYZ Street, Bahawalnagar</p>
+            <p class="text-xs text-gray-400">Punjab, Pakistan</p>
+          </div>
+          <a href="https://maps.google.com" target="_blank"
+            class="ml-auto text-xs brand border brand-border rounded-lg px-3 py-1.5 hover:bg-orange-50 transition font-medium">
+            Directions
+          </a>
+        </div>
+      </div>
+ 
+      <!-- Business Hours -->
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+        <h3 class="font-semibold text-gray-800 mb-4 flex items-center gap-2">
+          <i class="fa-regular fa-clock brand"></i> Business Hours
+        </h3>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between">
+            <span class="text-gray-500">Monday – Friday</span>
+            <span class="font-medium text-gray-800">9:00 AM – 6:00 PM</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-500">Saturday</span>
+            <span class="font-medium text-gray-800">10:00 AM – 4:00 PM</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-500">Sunday</span>
+            <span class="font-medium text-red-400">Closed</span>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Social Links -->
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+        <h3 class="font-semibold text-gray-800 mb-4">Follow Us</h3>
+        <div class="flex gap-3">
+          <a href="#" class="w-10 h-10 brand-bg rounded-full flex items-center justify-center text-white hover:opacity-80 transition">
+            <i class="fa-brands fa-facebook-f text-sm"></i>
+          </a>
+          <a href="#" class="w-10 h-10 brand-bg rounded-full flex items-center justify-center text-white hover:opacity-80 transition">
+            <i class="fa-brands fa-instagram text-sm"></i>
+          </a>
+          <a href="#" class="w-10 h-10 brand-bg rounded-full flex items-center justify-center text-white hover:opacity-80 transition">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+          </a>
+          <a href="#" class="w-10 h-10 brand-bg rounded-full flex items-center justify-center text-white hover:opacity-80 transition">
+            <i class="fa-brands fa-youtube text-sm"></i>
+          </a>
+          <a href="#" class="w-10 h-10 brand-bg rounded-full flex items-center justify-center text-white hover:opacity-80 transition">
+            <i class="fa-brands fa-tiktok text-sm"></i>
+          </a>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- ───── FAQ ───── -->
+  <section class="w-[90%] mx-auto mb-16">
+    <h2 class="text-2xl font-bold text-gray-800 mb-2 text-center">Frequently Asked Questions</h2>
+    <p class="text-gray-400 text-sm text-center mb-8">Quick answers to common questions</p>
+ 
+    <div class="space-y-3 max-w-2xl mx-auto" id="faqList">
+ 
+      <div class="faq-item bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+        <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 text-left text-sm font-medium text-gray-800">
+          How long does delivery take?
+          <i class="fa-solid fa-chevron-down brand faq-arrow text-xs"></i>
+        </button>
+        <div class="faq-body px-6 text-sm text-gray-500 leading-relaxed">
+          We deliver within 3–5 working days across Pakistan. Express delivery (1–2 days) is available in major cities.
+        </div>
+      </div>
+ 
+      <div class="faq-item bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+        <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 text-left text-sm font-medium text-gray-800">
+          Can I return or exchange a product?
+          <i class="fa-solid fa-chevron-down brand faq-arrow text-xs"></i>
+        </button>
+        <div class="faq-body px-6 text-sm text-gray-500 leading-relaxed">
+          Yes! We offer a 7-day easy return policy. Products must be unused and in original packaging.
+        </div>
+      </div>
+ 
+      <div class="faq-item bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+        <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 text-left text-sm font-medium text-gray-800">
+          Is Cash on Delivery available?
+          <i class="fa-solid fa-chevron-down brand faq-arrow text-xs"></i>
+        </button>
+        <div class="faq-body px-6 text-sm text-gray-500 leading-relaxed">
+          Absolutely. We accept Cash on Delivery (COD) across all cities in Pakistan.
+        </div>
+      </div>
+ 
+      <div class="faq-item bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+        <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 text-left text-sm font-medium text-gray-800">
+          How can I track my order?
+          <i class="fa-solid fa-chevron-down brand faq-arrow text-xs"></i>
+        </button>
+        <div class="faq-body px-6 text-sm text-gray-500 leading-relaxed">
+          After your order is dispatched, you'll receive an SMS with a tracking number. You can track it on our courier's website.
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- ───── FOOTER ───── -->
+  <section class="mt-5 bg-[#f4f4f6] w-full h-[30vh]">
+        <footer class=" h-full grid grid-cols-4 grid-rows-1 place-content-center items-center w-[90%] mx-auto">
+
+          <!-- Col 1 -->
+          <div class="col-span-1 pl-2">
+            <h2 class="text-3xl my-2">We are the best E-Commerece Brand in Pakistan</h2>
+            <p class="text-sm">Selling Modern Items in Affordable Prices</p>
+          </div>
+
+          <!-- Col 2 -->
+          <div class="col-span-1">
+            <h2 class="text-2xl tracking-tight">About</h2>
+            <p class="text-gray-700"><a href="#">Our Journey</a></p>
+            <p class="text-gray-700"><a href="#">Blog</a></p>
+            <p class="text-gray-700"><a href="#">Contact Us</a></p>
+            <p class="text-gray-700"><a href="#">Happy Customers</a></p>
+          </div>
+
+          <!-- Col 3 -->
+          <div class="col-span-1">
+             <h2 class="text-2xl tracking-tight">Quick Linkes</h2>
+            <p class="text-gray-700"><a href="#">Privacy Policy</a></p>
+            <p class="text-gray-700"><a href="#">Refund Policy</a></p>
+            <p class="text-gray-700"><a href="#">Store Location</a></p>
+            <p class="text-gray-700"><a href="#">Shipping Information</a></p>
+          </div>
+
+          <!-- Col 4 -->
+          <div class="col-span-1 relative">
+              <h2 class="text-2xl tracking-tight">News Letter</h2>
+            <p class="my-2">Sign up For News Letter</p>
+
+            <input type="email" placeholder="Your Email" class="border-2 border-black p-1">
+            <i class="fa-solid fa-arrow-right absolute right-45 bottom-15"></i>
+
+            <div class="icons text-2xl flex gap-6 w-[58%] mt-5">
+              <a href=""><i class="fa-brands fa-facebook hover:text-red-400" ></i></a>
+              <a href=""><i class="fa-brands fa-twitter hover:text-red-400"></i></a>
+              <a href=""><i class="fa-brands fa-instagram hover:text-red-400"></i></a>
+              <a href=""><i class="fa-brands fa-youtube hover:text-red-400"></i></a>
+            </div>
+            
+          </div>
+
+        </footer>
+
+       </section>
+ 
+  <!-- ───── TOAST ───── -->
+  <div id="toast"
+    class="fixed bottom-6 right-6 bg-gray-900 text-white text-sm px-5 py-3 rounded-xl shadow-xl flex items-center gap-3 z-[9999] opacity-0"
+    style="transform: translateY(20px);">
+    <i class="fa-solid fa-circle-check text-green-400"></i>
+    <span id="toastMsg">Message sent successfully!</span>
+  </div>
+
+  <script src="/src/Js/contactUs.js"></script>
+</body>
+</html>
