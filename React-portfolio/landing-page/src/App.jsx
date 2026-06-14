@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReact, faTailwindCss, faHtml5 } from '@fortawesome/free-brands-svg-icons'
 import {faJs} from '@fortawesome/free-brands-svg-icons'
 import {faCss} from '@fortawesome/free-brands-svg-icons'
+import Aboutme from './Aboutme'
 // import {faTailwindCss} from '@fortawesome/free-brands-svg-icons'
 
 
@@ -95,6 +96,9 @@ function App() {
 </div>
 </div>
     </section>
+
+    {/* About me Section  */}
+    <Aboutme/>
     </>
   )
 }
