@@ -5,6 +5,7 @@ import { faReact, faTailwindCss, faHtml5 } from '@fortawesome/free-brands-svg-ic
 import {faJs} from '@fortawesome/free-brands-svg-icons'
 import {faCss} from '@fortawesome/free-brands-svg-icons'
 import Aboutme from './Aboutme'
+import Skills from './Skills'
 // import {faTailwindCss} from '@fortawesome/free-brands-svg-icons'
 
 
@@ -99,6 +100,9 @@ function App() {
 
     {/* About me Section  */}
     <Aboutme/>
+
+    {/* Skills Components  */}
+    <Skills/>
     </>
   )
 }
