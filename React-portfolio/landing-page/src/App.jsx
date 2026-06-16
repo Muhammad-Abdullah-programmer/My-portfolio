@@ -6,6 +6,7 @@ import {faJs} from '@fortawesome/free-brands-svg-icons'
 import {faCss} from '@fortawesome/free-brands-svg-icons'
 import Aboutme from './Aboutme'
 import Skills from './Skills'
+import Services from './Services'
 // import {faTailwindCss} from '@fortawesome/free-brands-svg-icons'
 
 
@@ -103,6 +104,10 @@ function App() {
 
     {/* Skills Components  */}
     <Skills/>
+
+
+    {/* Services Component  */}
+    <Services/>
     </>
   )
 }
