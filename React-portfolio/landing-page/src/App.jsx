@@ -7,6 +7,8 @@ import {faCss} from '@fortawesome/free-brands-svg-icons'
 import Aboutme from './Aboutme'
 import Skills from './Skills'
 import Services from './Services'
+import Projects from './Projects'
+import Contactus from './Contactus'
 // import {faTailwindCss} from '@fortawesome/free-brands-svg-icons'
 
 
@@ -108,6 +110,12 @@ function App() {
 
     {/* Services Component  */}
     <Services/>
+
+    {/* Recent Projects  */}
+    <Projects/>
+
+    {/* Contact US  */}
+    <Contactus/>
     </>
   )
 }
