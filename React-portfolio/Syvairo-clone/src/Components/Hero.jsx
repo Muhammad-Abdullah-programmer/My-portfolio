@@ -7,10 +7,10 @@ export default function Hero(){
     return(
 
         <>
-        <div className="hero flex flex-col items-center justify-center mt-4  bg-linear-to-tr from-[#110f35] via-[#000002] to-[#220141] ">
+        <div className="hero flex flex-col items-center justify-center py-4 mx-auto max-w-[100%]  bg-linear-to-tr from-[#110f35] via-[#000002] to-[#220141] ">
 
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-[#00ced1]">Move from AI Tools to AI Results</h1>
-            <p className=" max-w-2xl mx-auto text-center my-6 tracking-wide">Syvairo deploys custom-built AI agents that run your business processes autonomously. Complete solutions, zero complexity.</p>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-[#00ced1] text-center max-w-[80%] ">Move from AI Tools to AI Results</h1>
+            <p className=" md:max-w-2xl mx-auto text-center my-6 tracking-wide text-white max-w-[85%]">Syvairo deploys custom-built AI agents that run your business processes autonomously. Complete solutions, zero complexity.</p>
 
             <div className="border border-cyan-700 bg-cyan-500/10 text-shadow: rgba(0, 206, 209, 0.45) 0px 0px 38px, rgba(0, 206, 209, 0.25) 0px 0px 20px; rounded-full p-2 font-semibold">
                 <span className="text-cyan-400 font-semibold text-sm ">The Story Behind SYVAIRO - Watch Now</span>

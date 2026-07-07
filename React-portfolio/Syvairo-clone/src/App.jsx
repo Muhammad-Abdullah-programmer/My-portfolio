@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 
 import './App.css'
+import BusinessSolution from './Components/BusinessSolution'
 
 function App() {
   const [showlinks, setshowlinks] = useState(false)
@@ -13,6 +14,7 @@ function App() {
          {/* Navbar  */}
          <Navbar showlinks={showlinks} setshowlinks={setshowlinks}/>
          <Hero/>
+         <BusinessSolution/>
     </>
   )
 }
