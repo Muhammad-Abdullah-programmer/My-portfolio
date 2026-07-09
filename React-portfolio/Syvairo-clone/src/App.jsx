@@ -5,6 +5,7 @@ import Hero from './Components/Hero'
 import './App.css'
 import BusinessSolution from './Components/BusinessSolution'
 import Cards from './Components/Cards'
+import Footer from './Components/Footer'
 
 function App() {
   const [showlinks, setshowlinks] = useState(false)
@@ -17,6 +18,7 @@ function App() {
          <Hero/>
          <BusinessSolution/>
          <Cards/>
+         <Footer/>
     </>
   )
 }

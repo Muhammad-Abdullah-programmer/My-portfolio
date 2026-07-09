@@ -9,17 +9,17 @@ export default function BusinessSolution(){
     return(
 
         <>
-        <div className="bg-linear-to-tr from-[#110f35] via-[#000002] to-[#220141] py-4">
+        <div className="bg-linear-to-tr from-[#110f35] via-[#000002]  to-[#220141] py-">
 
 
 {/* Heading  */}
 <div className="heading mx-auto max-w-[80%] ">
 
-    <div className='border-2 border-cyan-700 rounded-full md:max-w-[18%] max-w-[80%] mx-auto bg-cyan-500/20'>
+    <div className='border-2 border-cyan-700 rounded-full md:max-w-[18%] max-w-[80%] mx-auto  bg-cyan-500/20'>
         <span className="text-[#22d3ee] flex justify-center items-center gap-2 "> <IoMdBusiness className='text-white' /> Business Solution</span>
     </div>
 
-            <h2 className='my-4 text-3xl md:text-5xl bg-gradient-to-b  from-[#ffffff] to-[#00ced1] bg-clip-text text-transparent [text-shadow:0_0_38px_rgba(0,206,209,0.45),0_0_20px_rgba(0,206,209,0.25)]
+            <h2 className='my-4 text-2xl md:text-5xl bg-gradient-to-b  from-[#ffffff] to-[#00ced1] bg-clip-text text-transparent [text-shadow:0_0_38px_rgba(0,206,209,0.45),0_0_20px_rgba(0,206,209,0.25)]
   opacity-100 text-center'>How AI Transforms Your Business</h2>
 
   <p className='text-white text-center text-xl my-4 '>From manual chaos to fully automated operations in 3 steps.</p>
@@ -60,7 +60,7 @@ export default function BusinessSolution(){
 </div>
 
 {/* Button  */}
-    <a href="" className='text-center md:ml-[43%] ml-[20%]  '> <button className='bg-cyan-600 border-2 border-cyan-500 text-white text-lg [box-shadow:0_0_2px_rgb(0,206,209),0_0_10px_rgb(0,206,209)]  px-8 py-4 rounded-full  transition-all duration-300 hover:scale-110 '>Calculate Your ROI</button> </a>
+    <a href="" className='text-center md:ml-[43%] ml-[20%]  '> <button className=' mb-8 bg-cyan-600 border-2 border-cyan-500 text-white text-lg [box-shadow:0_0_2px_rgb(0,206,209),0_0_10px_rgb(0,206,209)]  px-8 py-4 rounded-full  transition-all duration-300 hover:scale-110 '>Calculate Your ROI</button> </a>
 
         </div>
         </>
