@@ -12,8 +12,8 @@ export default function Footer(){
     
     <>
     <section className="bg-black">
-        <footer className='flex justify-around items-center py-4  gap-8 md:gap-0 pl-4 md:flex-col justify-between '>
-<div className="footer">
+        <footer className='  flex justify-around items-center py-4  gap-8 md:gap-0 pl-4 md:flex-col justify-between '>
+<div className="footer md:flex md:justify-between border-b border-gray-400 pb-8  md:w-[95%]">
     {/* First child  */}
 <div className="first flex flex-col gap-4 md:max-w-[25%]">
     <img src={logo} alt="" className='w-35' />
@@ -60,6 +60,11 @@ export default function Footer(){
 
 
 </div>
+</div>
+
+<div className="copyright-tex flex justify-between text-gray-300 text-sm hidden md:flex mt-6  w-[70%]">
+    <span>© 2026 All Rights Reserved.</span>
+    <span>Developed by M.Abdullah</span>
 </div>
         </footer>
     </section>

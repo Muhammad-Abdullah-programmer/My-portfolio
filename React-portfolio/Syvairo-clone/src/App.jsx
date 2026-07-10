@@ -1,10 +1,12 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
-import Navbar from './Components/Navbar'
-import Hero from './Components/Hero'
+
 
 import './App.css'
-import BusinessSolution from './Components/BusinessSolution'
-import Cards from './Components/Cards'
+
+import ServiceCards from './Components/Servicecards'
+import Home from './Pages/Home'
+import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 
 function App() {
@@ -12,13 +14,26 @@ function App() {
 
   return (
     <>
+
+  
+
+
+    <BrowserRouter>
          
-         {/* Navbar  */}
          <Navbar showlinks={showlinks} setshowlinks={setshowlinks}/>
-         <Hero/>
-         <BusinessSolution/>
-         <Cards/>
-         <Footer/>
+      <Routes>
+
+<Route path="/" element={<Home showlinks={showlinks} setshowlinks={setshowlinks}/>} />
+<Route path="/Service" element={<ServiceCards/>} />
+{/* <Route path="/media" element={<Media/>} /> */}
+
+   
+      
+
+
+      </Routes>
+ <Footer/>
+         </BrowserRouter>
     </>
   )
 }

@@ -2,6 +2,7 @@
 import logo from '../assets/Images/logo.png'
 
 import {IoMdMenu} from '../assets/Icons.jsx'
+import { Link } from 'react-router-dom'
 
 
 
@@ -33,7 +34,7 @@ return(
         
             <ul className='flex justify-end text-white font-bold gap-4 '>
                 <li>Home</li>
-                <li>Services</li>
+               <Link to="/Service"> <li>Services</li></Link>
                 <li>Demos</li>
                 <li>Media</li>
                 <li>About</li>

@@ -19,6 +19,12 @@
     export { FaTwitter } from "react-icons/fa";
     export { FaLinkedin } from "react-icons/fa";
     export { FaWhatsappSquare } from "react-icons/fa";
+    export { FaWhatsapp } from "react-icons/fa";
+    export { FaArrowTrendUp } from "react-icons/fa6";
+
+
+    export { PiBrain } from "react-icons/pi";
+
 
 
 
