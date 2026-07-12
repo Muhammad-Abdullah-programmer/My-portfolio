@@ -33,7 +33,7 @@ return(
         {/* Links  */}
         
             <ul className='flex justify-end text-white font-bold gap-4 '>
-                <li>Home</li>
+               <Link to="/"><li>Home</li></Link>
                <Link to="/Service"> <li>Services</li></Link>
                 <li>Demos</li>
                 <Link to="/media">  <li>Media</li> </Link>
