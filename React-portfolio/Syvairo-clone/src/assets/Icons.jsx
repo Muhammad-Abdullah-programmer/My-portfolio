@@ -21,9 +21,9 @@
     export { FaWhatsappSquare } from "react-icons/fa";
     export { FaWhatsapp } from "react-icons/fa";
     export { FaArrowTrendUp } from "react-icons/fa6";
-
-
     export { PiBrain } from "react-icons/pi";
+    export { IoCheckmarkCircleOutline } from "react-icons/io5";
+
 
 
 

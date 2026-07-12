@@ -36,7 +36,8 @@ return(
                 <li>Home</li>
                <Link to="/Service"> <li>Services</li></Link>
                 <li>Demos</li>
-                <li>Media</li>
+                <Link to="/media">  <li>Media</li> </Link>
+               
                 <li>About</li>
                 <li>Careers</li>
                 <li>Contact</li>

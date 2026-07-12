@@ -9,7 +9,7 @@ export default function BusinessSolution(){
     return(
 
         <>
-        <div className="bg-linear-to-tr from-[#110f35] via-[#000002]  to-[#220141] py-">
+         <div className="bg-linear-to-tr from-[#110f35] via-[#000002]  to-[#220141] w-[100%] py-">
 
 
 {/* Heading  */}
@@ -62,7 +62,8 @@ export default function BusinessSolution(){
 {/* Button  */}
     <a href="" className='text-center md:ml-[43%] ml-[20%]  '> <button className=' mb-8 bg-cyan-600 border-2 border-cyan-500 text-white text-lg [box-shadow:0_0_2px_rgb(0,206,209),0_0_10px_rgb(0,206,209)]  px-8 py-4 rounded-full  transition-all duration-300 hover:scale-110 '>Calculate Your ROI</button> </a>
 
-        </div>
+         </div> 
+
         </>
     )
 }

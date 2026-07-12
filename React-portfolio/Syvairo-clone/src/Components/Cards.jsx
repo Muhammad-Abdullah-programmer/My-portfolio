@@ -130,7 +130,7 @@ export default function Cards() {
           </div>
 
           {/* Cards  */}
-          <div className="cards-parent  my-4 py-4 flex px-2  gap-4 overflow-x-auto mx-auto md:max-w-[95%] md:overflow-x-hidden  ">
+          <div className="cards-parent  my-4 py-4 flex md:justify-center px-2  gap-4 overflow-x-auto md:mx-auto  md:max-w-[100%] md:overflow-x-hidden  ">
 
             {/* Card 1 */}
             <div className="card-1   [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)]
