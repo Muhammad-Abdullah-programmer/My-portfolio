@@ -23,6 +23,8 @@
     export { FaArrowTrendUp } from "react-icons/fa6";
     export { PiBrain } from "react-icons/pi";
     export { IoCheckmarkCircleOutline } from "react-icons/io5";
+    export { IoMdSearch } from "react-icons/io";
+
 
 
 

@@ -4,12 +4,12 @@ import { useState } from 'react'
 
 import './App.css'
 
-import ServiceCards from './Components/Servicecards'
+// import ServiceCards from './Components/Servicecards'
 import Home from './Pages/Home'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
-import Services from './Components/Services'
 import Media from './Pages/Media'
+import Services from './Pages/Services'
 
 function App() {
   const [showlinks, setshowlinks] = useState(false)
@@ -26,6 +26,7 @@ function App() {
       <Routes>
 
 <Route path="/" element={<Home showlinks={showlinks} setshowlinks={setshowlinks}/>} />
+{/* <Route path="/Service" element={<ServiceCards/>} /> */}
 <Route path="/Service" element={<Services/>} />
 <Route path="/media" element={<Media/>} />
 

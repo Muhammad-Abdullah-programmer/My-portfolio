@@ -6,10 +6,10 @@ export default function MediaCards({filter}){
         <>
 
         
-        <div className="cards my-6 py-4 flex px-4 gap-4 flex-col md:flex-row  md:grid md:grid-cols-3 md:grid-rows-2">
+        <div className="cards my-6 py-4  px-4 gap-4    grid md:grid-cols-3 grid-cols-1 ">
 
             {/* Card 1  */}
-            <div className={` ${ filter === "all" || filter === "ai" ? "block md:flex" : "hidden"} card-1 bg-cyan-950 md:col-span-1 rounded-2xl md:flex md:flex-col md:justify-between`}>
+            <div className={` ${ filter === "all" || filter === "ai" ? "block md:flex" : "hidden"} card-1 bg-[#ffffff0f] md:col-span-1 rounded-2xl  md:flex-col md:justify-between`}>
 
                 {/* Image  */}
                 <div className="image w-[100%]  ">
@@ -27,7 +27,7 @@ export default function MediaCards({filter}){
             </div>
 
             {/* Card 2  */}
-            <div className={` ${ filter === "all" || filter === "automation" ? "block md:flex" : "hidden" } card-1 bg-cyan-950 md:col-span-1 rounded-2xl md:flex md:flex-col md:justify-between `}>
+            <div className={` ${ filter === "all" || filter === "automation" ? "block md:flex" : "hidden" } card-1 bg-[#ffffff0f] md:col-span-1 rounded-2xl md:flex-col md:justify-between `}>
 
                 {/* Image  */}
                 <div className="image w-[100%] ">
@@ -45,7 +45,7 @@ export default function MediaCards({filter}){
             </div>
 
             {/* Card 3  */}
-  <div className={`${filter === "all" || filter === "caseStudy" ? "block md:flex" : "hidden"} card-1 bg-cyan-950 md:col-span-1 rounded-2xl md:flex md:flex-col md:justify-between`}>
+  <div className={`${filter === "all" || filter === "caseStudy" ? "block md:flex" : "hidden"} card-1 bg-[#ffffff0f] md:col-span-1 rounded-2xl  md:flex-col md:justify-between`}>
 
                 {/* Image  */}
                 <div className="image w-[100%] ">
@@ -63,7 +63,7 @@ export default function MediaCards({filter}){
             </div>
 
             {/* Card 4  */}
-  <div className={`${filter === "all" || filter === "companyNews" ? "block md:flex" : "hidden"} card-1 bg-cyan-950 md:col-span-1 rounded-2xl md:flex-col md:justify-between`}>
+  <div className={`${filter === "all" || filter === "companyNews" ? "block md:flex" : "hidden"} card-1 bg-[#ffffff0f] md:col-span-1 rounded-2xl md:flex-col md:justify-between`}>
 
                 {/* Image  */}
                 <div className="image w-[100%] ">

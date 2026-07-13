@@ -17,7 +17,7 @@ const Process = () => {
 
     <section className="bg-gradient-to-tr from-[#110f35] via-[#000002] to-[#220141] py-4 ">
       <div className="relative overflow-hidden py-6">
-        <div className="border-1 py-1 mt-8 border-cyan-700 rounded-full md:max-w-[12%] w-[54%]   mx-auto bg-cyan-500/20">
+        <div className="border-1 py-1  border-cyan-700 rounded-full md:max-w-[12%] w-[54%]   mx-auto bg-cyan-500/20">
           <span className="text-[#22d3ee] flex justify-center items-center gap-2 ">
             {" "}
             <FaRocket className="text-white" /> Our Process
@@ -47,7 +47,7 @@ const Process = () => {
 
 {/* Cards Div  */}
 
-         <div className="cards flex flex-col gap-10  w-[70%] h-[100%] pl-4  mx-auto">
+         <div className="cards flex flex-col gap-10 mt-15 w-[70%] h-[100%] pl-4  mx-auto">
 
 {/* Card -1  */}
             <div className="card-1 flex flex-col md:items-start gap-4 py-4 px-3 items-center rounded-2xl border-1 border-white/10  bg-white/5 backdrop-blur hover:bg-cyan-400/5 hover:border-cyan-400 transition-all ">
@@ -90,7 +90,7 @@ const Process = () => {
 
         {/* Line Div  */}
         
-          <div className="w-1 h-[100%] bg-gradient-to-b from-cyan-400/50 to-cyan-400/30 to-transparent absolute top-[18%] md:top-[29%] left-6 md:left-[10%] ">
+          <div className="w-1 h-[100%] bg-gradient-to-b from-cyan-400/50 to-cyan-400/30 to-transparent absolute top-[22%] md:top-[29%] left-6 md:left-[10%] ">
             {/* Circle 1 */}
             <div className="circle absolute -top-[1%] -left-5 p-4 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500">
               <IoCheckmarkCircleOutline className="text-white" />

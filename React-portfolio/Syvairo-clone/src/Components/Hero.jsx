@@ -18,13 +18,13 @@ export default function Hero(){
 
             {/* Vido  */}
 
-<div className='border-8 border-cyan-950 rounded-3xl p-5 coursor-pointer backdrop-blur-xl my-6'>
+<div className='border-8 border-cyan-950 rounded-2xl  coursor-pointer backdrop-blur-xl my-6'>
     <video
   autoPlay
   loop
   muted
   playsInline
-  className="w-70 h-auto"
+  className="w-70 h-auto rounded-2xl"
 >
   <source src="/videoplayback.mp4" type="video/mp4" />
 
