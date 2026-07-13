@@ -23,7 +23,7 @@ export default function ServiceCards(){
         
           <section className=" bg-black py-6 ">
 
-            <div className='border-2 border-cyan-700 rounded-full md:max-w-[15%] max-w-[40%]  mx-auto  bg-cyan-500/20'>
+            <div className='border-2 border-cyan-700 rounded-full md:max-w-[15%] max-w-[65%]  mx-auto  bg-cyan-500/20'>
         <span className="text-[#22d3ee] flex justify-center items-center gap-2 py-2 font-bold "> <FaArrowTrendUp className='text-white' /> High ROI Automation</span>
     </div>
 
